@@ -7,7 +7,7 @@ const AboutSection = styled.div`
     display: flex;
     flex-direction: column;
    } 
-    @media only screen and (min-width: 800px) {
+    @media only screen and (min-width: 950px) {
         #about-container{
             flex-direction: row
             

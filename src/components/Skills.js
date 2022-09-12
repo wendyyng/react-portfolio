@@ -112,13 +112,13 @@ const Skills = () => {
   return (
     <SkillsSection>
       <Box py="36" bg='#e6f4f7' rounded="lg" _dark={{
-    bg: "#680747",
+    bg: "#284b63",
   }}>
         <Text
-          fontSize={['1.2rem', '1.4rem', '1.6rem', '2rem']}
           fontWeight="bold"
           textAlign="center"
           mb={16}
+          fontSize="4xl"
         >
           Skills
         </Text>

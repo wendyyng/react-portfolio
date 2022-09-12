@@ -6,7 +6,7 @@ const FooterSection = styled.div`
 height: auto;
 color: white;
 background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
 width: 100%
 `
 function Footer() {

@@ -36,7 +36,7 @@ function Projects() {
     {
       title: "Super Team Picker",
       stack: "NodeJS, Express, Bootstrap, Knex.js, PosgreSQL",
-      description: "Super Team Picker allows users to create cohorts and randomly generate teams based on selected methods: team count/ number per team and quantity ",
+      description: "Super Team Picker allows users to create cohorts and randomly generate teams based on selected methods: team count/ number per team.",
       imageUrl: "https://user-images.githubusercontent.com/71687298/189564121-3d26a20b-71b6-426d-bab1-170894f84f8c.png",
       githubLink: "https://github.com/wendyyng/Super_Team_Picker",
       liveLink: ""
@@ -151,13 +151,16 @@ function Projects() {
               _hover={{
                 bgGradient: "linear(to-r, green.200, pink.500)",
               }}
+              _dark={{
+                bg: "purple.700",
+              }}
             >
               View Live
             </Link> : ""}
            
             <Link
               href={project.githubLink} isExternal
-              bgGradient='linear(to-r, green.200, pink.500)'
+              bgGradient='linear(to-r, blue.500, purple.400)'
               color="gray.100"
               px={5}
               py={3}
@@ -165,7 +168,10 @@ function Projects() {
               fontWeight="semibold"
               rounded="lg"
               _hover={{
-                bgGradient:'linear(to-l, #7928CA, #FF0080)',
+                bgGradient: "linear(to-r, blue.200, pink.300)",
+              }}
+              _dark={{
+                bg: "#284b63",
               }}
             >
               See Code

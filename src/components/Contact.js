@@ -22,13 +22,19 @@ function Contact() {
         <Text fontSize='4xl' fontWeight="bold" m="5">Contact Me!</Text>
         <HStack spacing="10" justifyContent="center"  mb="10">
             <Link id="icons" href='https://www.linkedin.com/in/wendyywng/' isExternal>
-                <Icon as={FaLinkedin} boxSize="50" color="pink.500"/>
+                <Icon as={FaLinkedin} boxSize="50" color="pink.500" _dark={{
+                color: "pink.200",
+              }}/>
             </Link>
             <Link id="icons" href='https://github.com/wendyyng' isExternal>
-                <Icon as={FaGithub} boxSize="50" color="pink.500"/>
+                <Icon as={FaGithub} boxSize="50" color="pink.500" _dark={{
+                color: "pink.200",
+              }}/>
             </Link>
             <Link id="icons" href='mailto:yng@ucalgary.ca' isExternal>
-                <Icon as={MdEmail} boxSize="50" color="pink.500"/>
+                <Icon as={MdEmail} boxSize="50" color="pink.500"  _dark={{
+                color: "pink.200",
+              }}/>
                 
             </Link>
         </HStack>

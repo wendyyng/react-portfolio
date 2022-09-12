@@ -13,7 +13,7 @@ import Navbar from './components/Navbar';
 function App() {
   
   return (
-    <VStack  pt={7}>
+    <VStack  pt={2}>
         <Navbar></Navbar>
         <Header></Header>
         <About></About>

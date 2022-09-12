@@ -3,20 +3,31 @@ import { HStack } from '@chakra-ui/layout'
 import React from 'react'
 import {Text, Stack, Link } from '@chakra-ui/react'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import styled from 'styled-components'
+
+const ContactSection = styled.div`
+  #icons {
+    transition: transform .2s !important;
+    cursor: pointer;
+  }
+  #icons:hover {
+    transform: scale(1.2) !important;
+  }
+  `
 
 function Contact() {
     return (
-        <Stack spacing={3}>
-        <Text fontSize='4xl'>Contact Me!</Text>
-        <HStack spacing="24">
-            <Link href='https://www.linkedin.com/in/wendyywng/' isExternal>
+        <ContactSection>
+        <Text fontSize='4xl' fontWeight="bold" m="5">Contact Me!</Text>
+        <HStack spacing="10" justifyContent="center"  mb="10">
+            <Link id="icons" href='https://www.linkedin.com/in/wendyywng/' isExternal>
                 <Icon as={FaLinkedin} boxSize="50" color="pink.500"/>
             </Link>
-            <Link href='https://github.com/wendyyng' isExternal>
+            <Link id="icons" href='https://github.com/wendyyng' isExternal>
                 <Icon as={FaGithub} boxSize="50" color="pink.500"/>
             </Link>
         </HStack>
-        </Stack>
+        </ContactSection>
     )
 }
 

@@ -2,6 +2,8 @@ import React, {useState } from 'react'
 import { useMediaQuery, Image, Container, Flex, Stack, Text, Box, VStack } from '@chakra-ui/react'
 import styled from 'styled-components';
 
+const AboutSection = styled
+
 function About() {
     const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
     

@@ -64,7 +64,7 @@ function Projects() {
    _dark={{
     bg: "#3e3e3e",
   }}
-  bg="#dee2ff">
+  bg="#eeeee4">
     <Center>
        <Text fontSize="4xl" fontWeight="bold" mt={20}>Projects</Text>
     </Center>

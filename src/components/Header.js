@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <Flex w='100%'  mx="20" rounded="lg" bg="#eee4ee" _dark={{
-        bg: "#3e3e3e",
+        bg: "#001845",
       }} justifyContent="center" pb="10">
         <Flex direction={isNotSmallerScreen ? "row" : "column"} spacing="200px" p={isNotSmallerScreen ? "32" : "0"} alignSelf="flex-start">
             <Box mt={isNotSmallerScreen ? "0" : 16 } align="flex-start" spacing={3}>

@@ -111,7 +111,9 @@ const Technologies = [
 const Skills = () => {
   return (
     <SkillsSection>
-      <Box py="36" bg='#e4eeee' rounded="lg">
+      <Box py="36" bg='#e6f4f7' rounded="lg" _dark={{
+    bg: "#680747",
+  }}>
         <Text
           fontSize={['1.2rem', '1.4rem', '1.6rem', '2rem']}
           fontWeight="bold"
@@ -132,7 +134,7 @@ const Skills = () => {
                 mb="2"
                 src={tech.imgUrl}
               />
-              <Text>{tech.name}</Text>
+              <Text >{tech.name}</Text>
 
                         </Flex>
             </GridItem>

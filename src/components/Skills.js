@@ -3,56 +3,58 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SkillsSection = styled.div`
-.skills_grid {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  
-  #skills_grid_item {
-    transition: transform .2s !important;
-    cursor: pointer;
-  }
-  #skills_grid_item:hover {
-    transform: scale(1.2) !important;
-  }
-  
-  /* Custom, iPhone Retina */
-  @media only screen and (min-width: 320px) {
+    width: 100%;
+    margin-top: 0 !important;
     .skills_grid {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2em;
+        grid-template-columns: repeat(6, 1fr);
     }
-  }
-  
-  /* Extra Small Devices, Phones */
-  @media only screen and (min-width: 480px) {
-    .skills_grid {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 3em;
+    
+    #skills_grid_item {
+        transition: transform .2s !important;
+        cursor: pointer;
     }
-  }
-  
-  /* Small Devices, Tablets */
-  @media only screen and (min-width: 768px) {
-    .skills_grid {
-      grid-template-columns: repeat(4, 1fr);
-      gap:5em;
+    #skills_grid_item:hover {
+        transform: scale(1.2) !important;
     }
-  }
-  
-  /* Medium Devices, Desktops */
-  @media only screen and (min-width: 992px) {
-    .skills_grid {
-      grid-template-columns: repeat(6, 1fr);
+    
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width: 320px) {
+        .skills_grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+        }
     }
-  }
-  
-  /* Large Devices, Wide Screens */
-  @media only screen and (min-width: 1200px) {
-    .skills_grid {
-      grid-template-columns: repeat(6, 1fr);
+    
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width: 480px) {
+        .skills_grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3em;
+        }
     }
-  }
-`
+    
+    /* Small Devices, Tablets */
+    @media only screen and (min-width: 768px) {
+        .skills_grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap:5em;
+        }
+    }
+    
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width: 992px) {
+        .skills_grid {
+        grid-template-columns: repeat(6, 1fr);
+        }
+    }
+    
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width: 1200px) {
+        .skills_grid {
+        grid-template-columns: repeat(6, 1fr);
+        }
+    }
+    `
 
 const Technologies = [
     {
@@ -109,13 +111,12 @@ const Technologies = [
 const Skills = () => {
   return (
     <SkillsSection>
-      <Box pt="16" className="tech-container">
+      <Box py="36" bg='#e4eeee' rounded="lg">
         <Text
           fontSize={['1.2rem', '1.4rem', '1.6rem', '2rem']}
           fontWeight="bold"
           textAlign="center"
           mb={16}
-          color="black"
         >
           Skills
         </Text>
@@ -141,7 +142,7 @@ const Skills = () => {
           </Grid>
         </Center>
       </Box>
-      <Box height="10rem"></Box>
+      
     </SkillsSection>
   );
 };

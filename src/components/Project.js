@@ -2,7 +2,9 @@ import React from 'react'
 import { useMediaQuery, Image, Container, Flex, Stack, Text, Box, Link, Wrap} from '@chakra-ui/react'
 import Aos from "aos"
 import "aos/dist/aos.css";
-import { chakra } from '@chakra-ui/react';
+import { Center, chakra } from '@chakra-ui/react';
+
+
 
 function Projects() {
 
@@ -58,18 +60,24 @@ function Projects() {
   ]
 
   return (
-   <>
-    <Text fontSize="4xl" fontWeight="bold">Projects</Text>
+   <Stack       
+   _dark={{
+    bg: "#3e3e3e",
+  }}
+  bg="#dee2ff">
+    <Center>
+       <Text fontSize="4xl" fontWeight="bold" mt={20}>Projects</Text>
+    </Center>
     <Flex alignItems="center"
-    justifyContent="center"> 
+    justifyContent="center"
+    > 
       {/* bg="#edf3f8" */}
     <Wrap
-      _dark={{
-        bg: "#3e3e3e",
-      }}
-      pl={10}
+
       m={10}
       w="100"
+      p="10"
+      rounded="lg"
       alignItems="center"
       justify='center'
     >
@@ -78,7 +86,7 @@ function Projects() {
           <>
 
       <Box
-       m= {5}
+      my="5"
         w="sm"
         mx="20"
         bg="white"
@@ -176,7 +184,7 @@ function Projects() {
     </Wrap>
 
   </Flex>
-  </>
+  </Stack>
   )
 }
 

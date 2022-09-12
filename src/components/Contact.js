@@ -3,6 +3,7 @@ import { HStack } from '@chakra-ui/layout'
 import React from 'react'
 import {Text, Stack, Link } from '@chakra-ui/react'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import {MdEmail} from 'react-icons/md'
 import styled from 'styled-components'
 
 const ContactSection = styled.div`
@@ -25,6 +26,10 @@ function Contact() {
             </Link>
             <Link id="icons" href='https://github.com/wendyyng' isExternal>
                 <Icon as={FaGithub} boxSize="50" color="pink.500"/>
+            </Link>
+            <Link id="icons" href='mailto:yng@ucalgary.ca' isExternal>
+                <Icon as={MdEmail} boxSize="50" color="pink.500"/>
+                
             </Link>
         </HStack>
         </ContactSection>

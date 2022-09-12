@@ -2,17 +2,27 @@ import React, {useState } from 'react'
 import { useMediaQuery, Image, Container, Flex, Stack, Text, Box, VStack } from '@chakra-ui/react'
 import styled from 'styled-components';
 
-const AboutSection = styled
-
+const AboutSection = styled.div`
+   #about-container{
+    display: flex;
+    flex-direction: column;
+   } 
+    @media only screen and (min-width: 800px) {
+        #about-container{
+            flex-direction: row
+        }
+    }
+}
+`
 function About() {
     const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
-    
   return (
-    <Stack>
-        <Flex direction={isNotSmallerScreen ? "row" : "column"} spacing="100px" p={isNotSmallerScreen ? "32" : "0"} alignSelf="flex-start">
-        <Box>
-            <Image alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
-                mb={isNotSmallerScreen ? "0" : "5"} borderRadius='full'
+    <Stack py={20} >
+        <AboutSection >
+            <Flex id="about-container">
+            <Box>
+            <Image alignSelf="center"
+                borderRadius='full'
                 boxSize="300px" src='https://media-exp1.licdn.com/dms/image/C5603AQEslLgokDwsdA/profile-displayphoto-shrink_400_400/0/1651905245005?e=1668643200&v=beta&t=-408jHmSBQMm3avHNRT8CTF13aaO3khqq-FIiL0EYL4' />
         </Box>
         <Box >
@@ -41,7 +51,8 @@ function About() {
                 </VStack>
             </Container>
             </Box>
-        </Flex>
+            </Flex>
+        </AboutSection>
     </Stack>
   )
 }

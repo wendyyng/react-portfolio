@@ -11,9 +11,11 @@ function Navbar() {
 
   return (
     <Flex w="100%" justify="center" align="center">
-    <Heading ml="8" size="md" color="pink.400">
+    <Heading ml="8" size="md">
+        <Link href='/'>
             <Image src='/android-chrome-512x512-removebg-pink.png' alt='logo' boxSize='80px'
     objectFit='cover'/>
+     </Link>
     </Heading>
     <Spacer></Spacer>
     <Link id="icons" href='https://www.linkedin.com/in/wendyywng/' isExternal>

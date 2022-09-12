@@ -1,9 +1,10 @@
 import React, {useState } from 'react'
-import { useMediaQuery, Image, Container, Flex, Stack, Text, Box } from '@chakra-ui/react'
-
+import { useMediaQuery, Image, Container, Flex, Stack, Text, Box, VStack } from '@chakra-ui/react'
+import styled from 'styled-components';
 
 function About() {
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
+    
   return (
     <Stack>
         <Flex direction={isNotSmallerScreen ? "row" : "column"} spacing="100px" p={isNotSmallerScreen ? "32" : "0"} alignSelf="flex-start">
@@ -28,10 +29,14 @@ function About() {
                 I really love the 'aha' moments in programming and am passionate about making efficient, beautiful and user friendly web applications.
                 </Text>
                 <br />
+
+                <VStack spacing="3px" align="start">
                 <Text fontSize="3xl" fontWeight="bold">Education</Text>
-                <Text fontSize="5x1">Web Development Diploma - CodeCore College</Text>
+                <Text fontSize="5x1">Diploma, Web Development - CodeCore College</Text>
                 <Text fontSize="5x1">Bachelor of Arts, Economics - University of Calgary</Text>
                 <Text fontSize="5x1">Post-Graduate Diploma, Accounting - University of British Columbia</Text>
+
+                </VStack>
             </Container>
             </Box>
         </Flex>

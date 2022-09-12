@@ -6,27 +6,21 @@ import Header from './components/Header';
 import Contact from './components/Contact';
 import About from './components/About';
 import Project from './components/Project';
+import Footer from './components/Footer';
+import Skills from './components/Skills';
+import Navbar from './components/Navbar';
 
 function App() {
-  const { colorMode, toggleColorMode } = useColorMode()
-  const isDark = colorMode === "dark"
-
+  
   return (
-    <VStack p={5}>
-      <Flex w="100%">
-        <Heading ml="8" size="md" color="pink.400">
-          Wendy Ng
-        </Heading>
-        <Spacer></Spacer>
-        <IconButton ml={2} colorScheme="pink"  icon={<FaLinkedin />} isRound="true"></IconButton>
-        <IconButton ml={2} colorScheme="pink" icon={<FaGithub />} isRound="true"></IconButton>
-        <IconButton ml={8} colorScheme="pink" icon={isDark ? <FaSun /> : <FaMoon />} isRound="true" onClick={toggleColorMode}></IconButton>
-      </Flex>
+    <VStack  pt={7}>
+        <Navbar></Navbar>
         <Header></Header>
         <About></About>
         <Project></Project>
+        <Skills></Skills>
         <Contact></Contact>
-
+        <Footer></Footer>
     </VStack>
   );
 }

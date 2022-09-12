@@ -10,10 +10,10 @@ function Contact() {
         <Text fontSize='4xl'>Contact Me!</Text>
         <HStack spacing="24">
             <Link href='https://www.linkedin.com/in/wendyywng/' isExternal>
-                <Icon as={FaLinkedin} boxSize="50"/>
+                <Icon as={FaLinkedin} boxSize="50" color="pink.500"/>
             </Link>
             <Link href='https://github.com/wendyyng' isExternal>
-                <Icon as={FaGithub} boxSize="50" href='#'/>
+                <Icon as={FaGithub} boxSize="50" color="pink.500"/>
             </Link>
         </HStack>
         </Stack>

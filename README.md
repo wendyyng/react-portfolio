@@ -5,10 +5,10 @@
 ## Link
 ### https://wendy-ng.vercel.app/
 
-## Tech Stack:
+## Tech Stack
 
 - React
 - Chakra UI
 
-## Screenshot:
+## Screenshot
 ![image](https://user-images.githubusercontent.com/71687298/190548542-9d68ccc2-69b0-442f-b206-aa4f5d872374.png)

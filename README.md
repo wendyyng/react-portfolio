@@ -9,6 +9,7 @@
 
 - React
 - Chakra UI
+- Styled Components
 - HTML
 - CSS
 

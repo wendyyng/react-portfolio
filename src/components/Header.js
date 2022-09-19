@@ -16,6 +16,7 @@ function Header() {
                 <Text fontSize="2xl" fontWeight="bold">Hi, My name is</Text>
                 <Text fontSize="7xl" fontWeight="bold" bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' >Wendy Ng</Text>
                 <Text fontSize="3xl" color={isDark ? "gray.200" : "gray.600"}>I am a web developer</Text>
+                
             {/* <Button p={7}  mt={7} colorScheme="pink"   _hover={{
                 bgGradient: "linear(to-r, blue.200, pink.200)",
               }}onClick={() =>

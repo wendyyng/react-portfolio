@@ -18,7 +18,7 @@ function Projects() {
     {
       title: "Delish",
       stack: "Ruby on Rails, ERB, Bootstrap, HTML, CSS, PostgreSQL",
-      description: "Delish is a homemade meal web app for home cooks to create meals and customers to search and order meals - collaborated project, team of 5.",
+      description: "Delish is a homemade meal web app for home cooks to create meals and customers to search and order meals - collaborative project, a team of 5.",
       imageUrl: "https://user-images.githubusercontent.com/71687298/189031637-3f7faac4-a811-4df8-a47e-ec2d4f9a5895.png",
       githubLink: "https://github.com/wendyyng/Homemade_Meals_APP",
       liveLink: "https://homemade-meal-app.herokuapp.com/"
@@ -26,7 +26,7 @@ function Projects() {
     {
       title: "Biddr",
       stack: "Ruby on Rails, React.js, Bootstrap, HTML, CSS, Javascript, PostgreSQL",
-      description: "Biddr is an auctions app that allows users to create auctions and place bids. Users are able to see the current highest price and if the reserve price has been met. ",
+      description: "Biddr is an auction app that allows users to create auctions and place bids. Users can see the current highest price and if the reserve price is met.",
       imageUrl: "https://user-images.githubusercontent.com/71687298/191143883-075b08b0-6837-4e37-9ad3-aee3e1cd08ce.png",
       githubLink: "https://github.com/wendyyng/Biddr",
       liveLink: ""
@@ -42,7 +42,7 @@ function Projects() {
     {
       title: "Hangman",
       stack: "Javascript, jQuery, Bootstrap, HTML, CSS",
-      description: "A front end only word guessing game. Players can play by clicking on the letters on the page or pressing the keyboard keys.",
+      description: "A frontend-only word guessing game. Players can play by clicking on the letters on the page or pressing the keyboard keys.",
       imageUrl: "https://user-images.githubusercontent.com/71687298/189029661-a7ea0e84-8092-4c86-9431-a702a0f0e3a9.png",
       githubLink: "https://github.com/wendyyng/Hangman",
       liveLink: "https://wendyyng.github.io/Hangman/"
@@ -50,7 +50,7 @@ function Projects() {
     {
       title: "CutieCats Search",
       stack: "React.js, JSX, JavaScript, HTML, CSS",
-      description: "A React app that generates cat cards with the names and emails fetched from the API. Users can search the cats by names using the search bar.",
+      description: "A React app that generates cat cards with the names and emails fetched from the API. Users can search the cats by name using the search bar.",
       imageUrl: "https://user-images.githubusercontent.com/71687298/189562835-6921ed7f-1388-438b-ac81-79f767e0dcd6.png",
       githubLink: "https://github.com/wendyyng/cutiecats_search",
       liveLink: "http://cutiecats-search.vercel.app/"

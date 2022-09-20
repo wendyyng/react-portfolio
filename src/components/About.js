@@ -39,7 +39,7 @@ function About() {
                 After self-studying for a few months, I figured out I liked programming more than accounting! */}
                 {/* Fortunately, I was accepted into a government funded program called "Youth in Tech", and received full financial support to enrol in the
                 CodeCore Web Development program. */}
-                I really love the 'aha' moments in programming and am passionate about making efficient, beautiful and user friendly web applications.
+                I really love the 'aha' moments in programming and am passionate about making efficient, beautiful and user-friendly web applications.
                 </Text>
                 <br />
 

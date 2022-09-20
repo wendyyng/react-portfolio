@@ -29,7 +29,7 @@ function Projects() {
       title: "Biddr",
       stack: "Ruby on Rails, React.js, Bootstrap, HTML, CSS, Javascript, PostgreSQL",
       description: "Biddr is an auctions app that allows users to create auctions and place bids. Users are able to see the current highest price and if the reserve price has been met. ",
-      imageUrl: "https://user-images.githubusercontent.com/71687298/189024155-c57b1dac-2285-4218-9474-b3f121d581a7.png",
+      imageUrl: "https://user-images.githubusercontent.com/71687298/191143883-075b08b0-6837-4e37-9ad3-aee3e1cd08ce.png",
       githubLink: "https://github.com/wendyyng/Biddr",
       liveLink: ""
     },

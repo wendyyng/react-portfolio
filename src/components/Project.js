@@ -1,7 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useMediaQuery, Image, Container, Flex, Stack, Text, Box, Link, Wrap} from '@chakra-ui/react'
-import Aos from "aos"
-import "aos/dist/aos.css";
 import { Center, chakra } from '@chakra-ui/react';
 
 
@@ -85,7 +83,7 @@ function Projects() {
         return(
           <>
 
-      <Box
+      <Box data-aos="fade-down"
       my="5"
         w="sm"
         mx="20"

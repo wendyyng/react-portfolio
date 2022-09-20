@@ -18,7 +18,7 @@ const AboutSection = styled.div`
 function About() {
     const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
   return (
-    <Stack py={20} >
+    <Stack py={20}>
         <AboutSection >
             <Flex id="about-container">
             <Box>

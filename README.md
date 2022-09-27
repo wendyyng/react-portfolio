@@ -1,6 +1,6 @@
 # Portfolio Website
 
-My portfolio website to display my projects and skills. Click the sun/moon icon at the top-right corner to toggle between dark and light mode.
+Portfolio website to display my projects and skills. Visitors can click the sun/moon icon at the top-right corner to toggle between dark and light mode. 
 
 ## Link
 ### https://wendy-ng.vercel.app/

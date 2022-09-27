@@ -10,6 +10,7 @@ Portfolio website to display my projects and skills. Visitors can click the sun/
 - React
 - Chakra UI
 - Styled Components
+- AOS
 - HTML
 - CSS
 

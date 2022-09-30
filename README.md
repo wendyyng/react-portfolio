@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A fully responsive portfolio website to display my projects and skills. Visitors can click the sun/moon icon at the top-right corner to toggle between dark and light mode. This was my first time to use Chakra UI and I finished building the website in less than one day.
+A fully responsive portfolio website to display my projects and skills. Visitors can click the sun/moon icon at the top-right corner to toggle between dark and light mode.
 
 ## Link
 ### https://wendy-ng.vercel.app/

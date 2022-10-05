@@ -19,7 +19,7 @@ function Projects() {
       description: "FriendMe is a social media platform where users can join groups, register for events and make friends with other users.",
       imageUrl: "https://user-images.githubusercontent.com/71687298/188759181-74097d81-816a-40b0-8e8e-69fd80246a6e.png",
       githubLink: "https://github.com/wendyyng/social_media_app",
-      liveLink: "https://friendme-app.herokuapp.com/"
+      liveLink: "https://www.youtube.com/watch?v=XcQoe7GQQP4"
     },
     {
       title: "Delish",

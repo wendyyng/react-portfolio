@@ -47,7 +47,7 @@ function About() {
                 <Text fontSize="3xl" fontWeight="bold">Education</Text>
                 <Text fontSize="5x1">Diploma, Web Development - CodeCore College</Text>
                 <Text fontSize="5x1">Bachelor of Arts, Economics - University of Calgary</Text>
-                <Text fontSize="5x1">Post-Graduate Diploma, Accounting - University of British Columbia</Text>
+                {/* <Text fontSize="5x1">Post-Graduate Diploma, Accounting - University of British Columbia</Text> */}
 
                 </VStack>
             </Container>

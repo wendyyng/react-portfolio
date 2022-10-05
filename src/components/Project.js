@@ -29,7 +29,7 @@ function Projects() {
       description: "Biddr is an auction app that allows users to create auctions and place bids. Users can see the current highest price and if the reserve price is met.",
       imageUrl: "https://user-images.githubusercontent.com/71687298/191143883-075b08b0-6837-4e37-9ad3-aee3e1cd08ce.png",
       githubLink: "https://github.com/wendyyng/Biddr",
-      liveLink: ""
+      liveLink: "https://youtu.be/96SQJTRQIVI"
     },
     {
       title: "Super Team Picker",
@@ -37,7 +37,7 @@ function Projects() {
       description: "Super Team Picker allows users to create cohorts and randomly generate teams based on selected methods: team count/ number per team.",
       imageUrl: "https://user-images.githubusercontent.com/71687298/189564121-3d26a20b-71b6-426d-bab1-170894f84f8c.png",
       githubLink: "https://github.com/wendyyng/Super_Team_Picker",
-      liveLink: ""
+      liveLink: "https://youtu.be/XdJQSqc3XBE"
     },
     {
       title: "Hangman",
@@ -54,6 +54,14 @@ function Projects() {
       imageUrl: "https://user-images.githubusercontent.com/71687298/189562835-6921ed7f-1388-438b-ac81-79f767e0dcd6.png",
       githubLink: "https://github.com/wendyyng/cutiecats_search",
       liveLink: "http://cutiecats-search.vercel.app/"
+    },
+    {
+      title: "Calculator",
+      stack: "JavaScript, HTML, CSS",
+      description: "An on-screen calculator app with basic arithmetic operations (divide, multiple, add, subtract) developed using HTML, CSS and Javascript.",
+      imageUrl: "https://user-images.githubusercontent.com/71687298/191097977-f38484bc-f47f-4edd-8bcd-0fd52c0c2ffc.png",
+      githubLink: "https://github.com/wendyyng/calculator-odin-project",
+      liveLink: "https://wendyyng.github.io/calculator-odin-project/"
     },
   ]
 

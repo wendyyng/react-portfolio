@@ -35,7 +35,7 @@ function Projects() {
       title: "Super Team Picker",
       stack: "NodeJS, Express, Bootstrap, Knex.js, PosgreSQL",
       description: "Super Team Picker allows users to create cohorts and randomly generate teams based on selected methods: team count/ number per team.",
-      imageUrl: "https://user-images.githubusercontent.com/71687298/189564121-3d26a20b-71b6-426d-bab1-170894f84f8c.png",
+      imageUrl: "https://user-images.githubusercontent.com/71687298/194416205-9f85f575-e317-424d-800c-6b871225548c.png",
       githubLink: "https://github.com/wendyyng/Super_Team_Picker",
       liveLink: "https://youtu.be/XdJQSqc3XBE"
     },

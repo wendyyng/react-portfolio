@@ -6,13 +6,14 @@ function Projects() {
 
   const projects = [
     {
-      title: "Portfolio Website",
-      stack: "React.js, Chakra UI, JavaScript, HTML, CSS",
-      description: "This fully responsive portfolio website was built with React and Chakra UI. Click the sun/moon icon at the top-right corner to toggle between dark and light mode.",
-      imageUrl: "https://user-images.githubusercontent.com/71687298/190548542-9d68ccc2-69b0-442f-b206-aa4f5d872374.png",
-      githubLink: "https://github.com/wendyyng/react-portfolio",
-      liveLink: "https://wendy-ng.vercel.app/"
+      title: "#ThankYouFrontlineWorkers Project",
+      stack: "PHP, MySQL, HTML, CSS, Bootstrap",
+      description: "A responsive website to collect thank you messages from the community to express gratitude for the frontline workers.",
+      imageUrl: "https://user-images.githubusercontent.com/71687298/194402137-476d8e2e-899c-48cb-ab4f-e3b64790bfcc.png",
+      githubLink: "https://github.com/wendyyng/php_thank_you",
+      liveLink: ""
     },
+
     {
       title: "FriendMe",
       stack: "Ruby on Rails, ERB, Semantic UI, Bootstrap, HTML, CSS, Javascript, Google Maps API, PostgreSQL",
@@ -61,14 +62,23 @@ function Projects() {
       githubLink: "https://github.com/wendyyng/cutiecats_search",
       liveLink: "http://cutiecats-search.vercel.app/"
     },
-    {
-      title: "Calculator",
-      stack: "JavaScript, HTML, CSS",
-      description: "An on-screen calculator app with basic arithmetic operations (divide, multiple, add, subtract) developed using HTML, CSS and Javascript.",
-      imageUrl: "https://user-images.githubusercontent.com/71687298/191097977-f38484bc-f47f-4edd-8bcd-0fd52c0c2ffc.png",
-      githubLink: "https://github.com/wendyyng/calculator-odin-project",
-      liveLink: "https://wendyyng.github.io/calculator-odin-project/"
+        {
+      title: "Portfolio Website",
+      stack: "React.js, Chakra UI, JavaScript, HTML, CSS",
+      description: "This fully responsive portfolio website was built with React and Chakra UI. Click the sun/moon icon at the top-right corner to toggle between dark and light mode.",
+      imageUrl: "https://user-images.githubusercontent.com/71687298/190548542-9d68ccc2-69b0-442f-b206-aa4f5d872374.png",
+      githubLink: "https://github.com/wendyyng/react-portfolio",
+      liveLink: "https://wendy-ng.vercel.app/"
     },
+
+    // {
+    //   title: "Calculator",
+    //   stack: "JavaScript, HTML, CSS",
+    //   description: "An on-screen calculator app with basic arithmetic operations (divide, multiple, add, subtract) developed using HTML, CSS and Javascript.",
+    //   imageUrl: "https://user-images.githubusercontent.com/71687298/191097977-f38484bc-f47f-4edd-8bcd-0fd52c0c2ffc.png",
+    //   githubLink: "https://github.com/wendyyng/calculator-odin-project",
+    //   liveLink: "https://wendyyng.github.io/calculator-odin-project/"
+    // },
     // {
     //   title: "My First Portfolio Website",
     //   stack: "HTML, CSS",

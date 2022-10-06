@@ -5,14 +5,7 @@ import { Center, chakra } from '@chakra-ui/react';
 function Projects() {
 
   const projects = [
-    {
-      title: "#ThankYouFrontlineWorkers Project",
-      stack: "PHP, MySQL, HTML, CSS, Bootstrap",
-      description: "A responsive website to collect thank you messages from the community to express gratitude for the frontline workers.",
-      imageUrl: "https://user-images.githubusercontent.com/71687298/194402137-476d8e2e-899c-48cb-ab4f-e3b64790bfcc.png",
-      githubLink: "https://github.com/wendyyng/php_thank_you",
-      liveLink: ""
-    },
+
 
     {
       title: "FriendMe",
@@ -45,6 +38,14 @@ function Projects() {
       imageUrl: "https://user-images.githubusercontent.com/71687298/189564121-3d26a20b-71b6-426d-bab1-170894f84f8c.png",
       githubLink: "https://github.com/wendyyng/Super_Team_Picker",
       liveLink: "https://youtu.be/XdJQSqc3XBE"
+    },
+      {
+      title: "#ThankYouFrontlineWorkers Project",
+      stack: "PHP, MySQL, HTML, CSS, Bootstrap",
+      description: "A responsive website to collect thank you messages from the community to express gratitude for the frontline workers.",
+      imageUrl: "https://user-images.githubusercontent.com/71687298/194402137-476d8e2e-899c-48cb-ab4f-e3b64790bfcc.png",
+      githubLink: "https://github.com/wendyyng/php_thank_you",
+      liveLink: ""
     },
     {
       title: "Hangman",

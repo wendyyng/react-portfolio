@@ -57,7 +57,7 @@ function Projects() {
     },
     {
       title: "CutieCats Search",
-      stack: "React.js, JSX, JavaScript, HTML, CSS",
+      stack: "React.js, TypeScript, JavaScript, HTML, CSS",
       description: "A React app that generates cat cards with the names and emails fetched from the API. Users can search the cats by name using the search bar.",
       imageUrl: "https://user-images.githubusercontent.com/71687298/189562835-6921ed7f-1388-438b-ac81-79f767e0dcd6.png",
       githubLink: "https://github.com/wendyyng/cutiecats_search",
@@ -117,6 +117,7 @@ function Projects() {
           <>
 
       <Box data-aos="fade-down"
+     data-aos-anchor-placement="top-center"
       my="5"
         w="sm"
         mx="20"

@@ -129,7 +129,7 @@ const Skills = () => {
           <Grid className="skills_grid" ml="2">
             {Technologies.map((tech) => {
                 return(
-                    <GridItem id={uuidv4()} data-aos="fade-down">
+                    <GridItem id={uuidv4()} data-aos="flip-up">
                         <Flex justifyContent="center" alignItems="center" direction="column">
                     <Image id='skills_grid_item'
                 w={["10","12","14","16"]}

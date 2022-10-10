@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react'
 import { useMediaQuery, Image, Container, Flex, Stack, Text, Box, Link, Wrap} from '@chakra-ui/react'
 import { Center, chakra } from '@chakra-ui/react';
-// import { motion } from "framer-motion"
-import { v4 as uuidv4 } from 'uuid';
 
 function Projects() {
-
+ const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
   const projects = [
 
 
@@ -93,7 +91,8 @@ function Projects() {
   ]
 
   return (
-   <Stack     
+   <Stack
+    data-aos="fade-down"     
    _dark={{
     bg: "#3e3e3e",
   }}
@@ -119,7 +118,7 @@ function Projects() {
           <>
 
       <Box
-      my="5"
+        my="5"
         w="sm"
         mx="20"
         bg="white"
@@ -152,7 +151,7 @@ function Projects() {
           </chakra.h1>
 
 
-      <chakra.p
+      <chakra.p 
       fontWeight="bold"
         py={2}
         color="gray.700"

@@ -12,7 +12,7 @@ function Header() {
         bg: "#001845",
       }} justifyContent="center" pb="10">
         <Flex direction={isNotSmallerScreen ? "row" : "column"} spacing="200px" p={isNotSmallerScreen ? "32" : "0"} alignSelf="flex-start">
-            <Box mt={isNotSmallerScreen ? "0" : 16 } align="flex-start" spacing={3} mb="8" >
+            <Box mt={isNotSmallerScreen ? "0" : 16 } align="flex-start" spacing={3} mb="8" mx={isNotSmallerScreen ? "0" : "6"}>
                 <Text fontSize="2xl" fontWeight="bold">Hi, My name is</Text>
                 <Text fontSize="7xl" fontWeight="bold" bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' >Wendy Ng</Text>
                 <Text fontSize="3xl" color={isDark ? "gray.200" : "gray.600"}>I am a web developer</Text>

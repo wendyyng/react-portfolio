@@ -170,8 +170,8 @@ function Projects() {
       >
         Stack: {project.stack}
       </chakra.p>
-      <Flex alignItems='center' justifyContent="center">
-      <Box mt={4}>
+      <Flex alignItems='center' justifyContent="center" >
+      <Box mt={3} mb="2">
             {project.liveLink ?  <Link 
             href={project.liveLink} isExternal
              color="gray.100"

@@ -21,12 +21,12 @@ function About() {
     <Stack py={20}>
         <AboutSection >
             <Flex id="about-container">
-            <Box>
-            <Image alignSelf="center"
+            <Flex alignItems='center' justifyContent="center" mb={8}>
+            <Image 
                 borderRadius='full'
                 boxSize="300px" src='https://media-exp1.licdn.com/dms/image/C5603AQEslLgokDwsdA/profile-displayphoto-shrink_400_400/0/1651905245005?e=1668643200&v=beta&t=-408jHmSBQMm3avHNRT8CTF13aaO3khqq-FIiL0EYL4' />
-        </Box>
-        <Box >
+            </Flex>
+            <Box>
             <Container>
                 <Text fontSize="3xl" fontWeight="bold">About Me</Text>
                 <Text fontSize="5x1">Hi, I am Wendy Ng, a web developer based in Vancouver BC, Canada. 

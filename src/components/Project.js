@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { useMediaQuery, Image, Container, Flex, Stack, Text, Box, Link, Wrap} from '@chakra-ui/react'
 import { Center, chakra } from '@chakra-ui/react';
+// import { motion } from "framer-motion"
+import { v4 as uuidv4 } from 'uuid';
 
 function Projects() {
 
@@ -91,7 +93,7 @@ function Projects() {
   ]
 
   return (
-   <Stack       
+   <Stack     
    _dark={{
     bg: "#3e3e3e",
   }}
@@ -116,8 +118,7 @@ function Projects() {
         return(
           <>
 
-      <Box data-aos="fade-down"
-     data-aos-anchor-placement="top-center"
+      <Box
       my="5"
         w="sm"
         mx="20"

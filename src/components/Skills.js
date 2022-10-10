@@ -1,6 +1,8 @@
 import { Box, Grid, Text, GridItem, Image, Center, Flex } from '@chakra-ui/react';
 import React from 'react';
 import styled from 'styled-components';
+import { v4 as uuidv4 } from 'uuid';
+
 
 const SkillsSection = styled.div`
     width: 100%;
@@ -127,7 +129,7 @@ const Skills = () => {
           <Grid className="skills_grid" ml="2">
             {Technologies.map((tech) => {
                 return(
-                    <GridItem data-aos="fade-down">
+                    <GridItem id={uuidv4()} data-aos="fade-down">
                         <Flex justifyContent="center" alignItems="center" direction="column">
                     <Image id='skills_grid_item'
                 w={["10","12","14","16"]}

@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A fully responsive portfolio website to display my projects and skills. Visitors can click the sun/moon icon at the top-right corner to toggle between dark and light mode. This website can be downloaded as a Progressive Web App (PWA) on desktop and mobile devices.
+A fully responsive portfolio website to display my projects and skills. Visitors can click the sun/moon icon at the top-right corner to toggle between dark and light mode. This website can be installed as a Progressive Web App (PWA) on desktop and mobile devices.
 
 ## Link
 ### https://wendy-ng.vercel.app/

@@ -14,7 +14,7 @@ A fully responsive portfolio website to display my projects and skills. Visitors
 - HTML
 - CSS
 
-## Installing as a Progressive Web App
+## Installing as a Progressive Web App (PWA)
 - For mobile devices users: find an ‘Add to Home screen’ button (in the notifications provided by the website or in the browser settings).
 - For desktop users: go to the address bar and find the install button on the right.
 

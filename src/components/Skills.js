@@ -2,7 +2,7 @@ import { Box, Grid, Text, GridItem, Image, Center, Flex } from '@chakra-ui/react
 import React from 'react';
 import styled from 'styled-components';
 import { v4 as uuidv4 } from 'uuid';
-
+import { skills } from '../skills.data';
 
 const SkillsSection = styled.div`
     width: 100%;
@@ -58,57 +58,7 @@ const SkillsSection = styled.div`
     }
     `
 
-const Technologies = [
-    {
-        name: "JavaScript",
-        imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-    },
 
-    {
-        name: "Ruby on Rails",
-        imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg"
-    },
-    {
-        name: "PostgreSQL",
-        imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
-    },
-    {
-        name: "React",
-        imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-    },
-    {
-        name: "NodeJs",
-        imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-    },
-    {
-        name: "ExpressJs",
-        imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-    },
-    {
-        name: "HTML5",
-        imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-    },
-    {
-        name: "CSS3",
-        imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-    },
-    {
-        name: "SASS",
-        imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-    },
-    {
-        name: "Bootstrap",
-        imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-    },
-    {
-        name: "jQuery",
-        imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg"
-    },
-    {
-        name: "Git",
-        imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-    },
-]
 
 const Skills = () => {
   return (
@@ -127,16 +77,16 @@ const Skills = () => {
 
         <Center>
           <Grid className="skills_grid" ml="2">
-            {Technologies.map((tech) => {
+            {skills.map((skill) => {
                 return(
                     <GridItem id={uuidv4()} data-aos="flip-up">
                         <Flex justifyContent="center" alignItems="center" direction="column">
                     <Image id='skills_grid_item'
                 w={["10","12","14","16"]}
                 mb="2"
-                src={tech.imgUrl}
+                src={skill.imgUrl}
               />
-              <Text >{tech.name}</Text>
+              <Text >{skill.name}</Text>
 
                         </Flex>
             </GridItem>

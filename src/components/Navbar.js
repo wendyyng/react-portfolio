@@ -14,7 +14,7 @@ function Navbar() {
     <Flex w="100%" justify="center" align="center">
     <Heading ml={isNotSmallerScreen ? "8" : "3"} size="md">
         <Link href='/'>
-            <Image src='/android-chrome-512x512-removebg-pink.png' alt='logo' boxSize='80px'
+            <Image src='/logo.png' alt='logo' boxSize='80px'
     objectFit='cover'/>
      </Link>
     </Heading>

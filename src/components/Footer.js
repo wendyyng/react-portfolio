@@ -1,6 +1,7 @@
-import { Center, Text } from "@chakra-ui/react";
+import { Center } from "@chakra-ui/react";
 import React from "react";
 import styled from "styled-components";
+
 const FooterSection = styled.div`
   height: auto;
   color: white;
@@ -8,6 +9,7 @@ const FooterSection = styled.div`
   background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
   width: 100%;
 `;
+
 function Footer() {
   return (
     <FooterSection>

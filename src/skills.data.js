@@ -1,19 +1,23 @@
 export const skills = [
   {
-    name: "JavaScript",
+    name: "Ruby",
     imgUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original-wordmark.svg",
   },
-
   {
-    name: "Ruby on Rails",
+    name: "Rails",
     imgUrl:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg",
   },
   {
-    name: "PostgreSQL",
+    name: "JavaScript",
     imgUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  {
+    name: "TypeScript",
+    imgUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
   },
   {
     name: "React",
@@ -29,6 +33,21 @@ export const skills = [
     name: "ExpressJs",
     imgUrl:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  },
+  {
+    name: "PostgreSQL",
+    imgUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg",
+  },
+  {
+    name: "MySQL",
+    imgUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
+  },
+  {
+    name: "MongoDB",
+    imgUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
   },
   {
     name: "HTML5",
@@ -59,5 +78,15 @@ export const skills = [
     name: "Git",
     imgUrl:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    name: "RSpec",
+    imgUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rspec/rspec-original-wordmark.svg",
+  },
+  {
+    name: "Jest",
+    imgUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
   },
 ];

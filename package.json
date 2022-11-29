@@ -13,7 +13,6 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "framer-motion": "^7.5.3",
-    "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
@@ -26,12 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "eslint:check": "eslint 'src/**/*.{js,jsx}'",
-    "eslint:fix": "eslint --fix 'src/**/*.{js,jsx}'",
-    "delint": "npm run eslint:fix; npm run prettier:write",
-    "prettier:check": "prettier --check 'src/**/*.{js,jsx,css}'",
-    "prettier:write": "prettier --write 'src/**/*.{js,jsx,css}'"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -50,13 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint": "^8.28.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.5.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.31.11"
   }
 }

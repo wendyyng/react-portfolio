@@ -22,4 +22,4 @@ A fully responsive portfolio website to display my projects and skills. Visitors
 
 ## Screenshot
 
-![image](https://user-images.githubusercontent.com/71687298/190548542-9d68ccc2-69b0-442f-b206-aa4f5d872374.png)
+![image](https://user-images.githubusercontent.com/71687298/204716616-dbcca679-501b-41f2-ae2c-edce643ffab2.png)

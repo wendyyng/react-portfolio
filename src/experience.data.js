@@ -11,7 +11,8 @@ export const experience = [
       "Developed a product mindset by writing the user stories and product features in the product specification",
     ],
     github_link: "https://github.com/OpenTree-Education/rhizone-lms",
-    company_logo: "https://avatars.githubusercontent.com/u/84355280?s=200&v=4",
+    company_logo:
+      "https://user-images.githubusercontent.com/71687298/204715984-926cf6ce-fc8c-4d75-90b2-11aa719c6f7a.png",
   },
   {
     position_title: "Open Source Contributor",
@@ -23,6 +24,7 @@ export const experience = [
       "Created the contributing guideline and templates for pull requests and issues to help the project to increase successful contributions",
     ],
     github_link: "https://github.com/Multiplied-By-One/MBO-App/",
-    company_logo: "https://avatars.githubusercontent.com/u/76632444?s=200&v=4",
+    company_logo:
+      "https://user-images.githubusercontent.com/71687298/204715995-2f452acc-0e08-4d53-b6a0-5d3d1022be06.png",
   },
 ];

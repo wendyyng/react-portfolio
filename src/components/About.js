@@ -33,7 +33,7 @@ function About() {
             <Image
               borderRadius="full"
               boxSize="300px"
-              src="https://avatars.githubusercontent.com/u/71687298?v=4"
+              src="https://user-images.githubusercontent.com/71687298/204715951-2c26f338-42c2-47f8-889d-b7087ebf90e0.jpg"
             />
           </Flex>
           <Box>

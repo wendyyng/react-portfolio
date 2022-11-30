@@ -47,14 +47,7 @@ function About() {
                 Canada. Having recently completed the full-stack web development
                 program at CodeCore College, I am now looking for a full-time
                 position in web development. Prior to this program, I have
-                worked in international relations and accounting.
-                {/* During my time at my previous company as an accountant, 
-                I had the opportunity to work closely with a software engineer to develop the in-house accounting software. */}
-                {/* I had heard people saying "coding is the new literacy", and thought "why not?", and started my journey of learning programming.
-                After self-studying for a few months, I figured out I liked programming more than accounting! */}
-                {/* Fortunately, I was accepted into a government funded program called "Youth in Tech", and received full financial support to enrol in the
-                CodeCore Web Development program. */}
-                I really love the 'aha' moments in programming and am passionate
+                worked in international relations and accounting. I really love the 'aha' moments in programming and am passionate
                 about making efficient, beautiful and user-friendly web
                 applications.
               </Text>

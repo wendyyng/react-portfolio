@@ -1,28 +1,15 @@
-import React, { useEffect } from "react";
-import {
-  useMediaQuery,
-  Image,
-  Container,
-  Flex,
-  Stack,
-  Text,
-  Box,
-  Link,
-  Wrap,
-} from "@chakra-ui/react";
+import React from "react";
+import { Image, Flex, Stack, Text, Box, Link, Wrap } from "@chakra-ui/react";
 import { Center, chakra } from "@chakra-ui/react";
 import styled from "styled-components";
 
 import { projects } from "../projects.data";
 
 const ProjectSection = styled.div`
-  width: 100%;
   margin-top: 0 !important;
 `;
 
 function Projects() {
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
-
   return (
     <ProjectSection>
       <Stack
@@ -47,10 +34,11 @@ function Projects() {
             alignItems="center"
             justify="center"
           >
-            {projects.map((project) => {
+            {projects.map((project, index) => {
               return (
                 <>
                   <Box
+                    key={index}
                     my="5"
                     w="sm"
                     mx="20"

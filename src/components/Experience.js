@@ -51,7 +51,7 @@ const Experience = () => {
               direction={{ base: "column", sm: "row" }}
               overflow="hidden"
               variant="filled"
-              maxW="850"
+              maxW="950"
               size="sm"
               shadow="lg"
               bg="white"

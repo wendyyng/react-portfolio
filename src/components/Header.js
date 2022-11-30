@@ -1,15 +1,5 @@
-import {
-  Center,
-  Container,
-  useColorMode,
-  useMediaQuery,
-  Stack,
-  Flex,
-  Box,
-  Text,
-  Button,
-} from "@chakra-ui/react";
 import React from "react";
+import { useColorMode, useMediaQuery, Flex, Box, Text } from "@chakra-ui/react";
 
 function Header() {
   const { colorMode } = useColorMode();

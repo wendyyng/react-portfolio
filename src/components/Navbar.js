@@ -1,15 +1,13 @@
 import React from "react";
-import { Link, Flex, VStack, Heading } from "@chakra-ui/layout";
+import { FaSun, FaMoon, FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link, Flex, Heading } from "@chakra-ui/layout";
 import {
   useMediaQuery,
-  ColorModeContext,
   IconButton,
   useColorMode,
   Spacer,
   Image,
-  Box,
 } from "@chakra-ui/react";
-import { FaSun, FaMoon, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();

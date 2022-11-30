@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   Grid,
@@ -7,9 +8,8 @@ import {
   Center,
   Flex,
 } from "@chakra-ui/react";
-import React from "react";
 import styled from "styled-components";
-import { v4 as uuidv4 } from "uuid";
+
 import { skills } from "../skills.data";
 
 const SkillsSection = styled.div`
@@ -90,9 +90,9 @@ const Skills = () => {
 
         <Center>
           <Grid className="skills_grid" ml="2">
-            {skills.map((skill) => {
+            {skills.map((skill, index) => {
               return (
-                <GridItem id={uuidv4()} data-aos="flip-up">
+                <GridItem key={index} data-aos="flip-up">
                   <Flex
                     justifyContent="center"
                     alignItems="center"

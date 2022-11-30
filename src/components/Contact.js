@@ -1,9 +1,9 @@
-import Icon from "@chakra-ui/icon";
-import { HStack } from "@chakra-ui/layout";
 import React from "react";
-import { Text, Stack, Link } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Icon from "@chakra-ui/icon";
+import { HStack } from "@chakra-ui/layout";
+import { Text, Link } from "@chakra-ui/react";
 import styled from "styled-components";
 
 const ContactSection = styled.div`

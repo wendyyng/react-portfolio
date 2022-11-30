@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import {
-  useMediaQuery,
   Image,
   Container,
   Flex,
@@ -24,8 +23,8 @@ const AboutSection = styled.div`
     }
 }
 `;
+
 function About() {
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
   return (
     <Stack py={20}>
       <AboutSection>
@@ -43,13 +42,13 @@ function About() {
                 About Me
               </Text>
               <Text fontSize="5x1">
-                Hi, I am Wendy Ng, a web developer based in Vancouver BC,
-                Canada. Having recently completed the full-stack web development
-                program at CodeCore College, I am now looking for a full-time
-                position in web development. Prior to this program, I have
-                worked in international relations and accounting. I really love
-                the 'aha' moments in programming and am passionate about making
-                efficient, beautiful and user-friendly web applications.
+                Hi, I am Wendy Ng, a full-stack developer based in Vancouver BC,
+                Canada. Having completed the full-stack web development program
+                at CodeCore College, I am now looking for a full-time position
+                in web development. Prior to this program, I have worked in
+                international relations and accounting. I really love the 'aha'
+                moments in programming and am passionate about making efficient,
+                beautiful and user-friendly web applications.
               </Text>
               <br />
 

@@ -70,14 +70,21 @@ const Skills = () => {
   return (
     <SkillsSection>
       <Box
-        py="36"
+        py={5}
+        pb={20}
         bg="#e6f4f7"
         rounded="lg"
         _dark={{
           bg: "#284b63",
         }}
       >
-        <Text fontWeight="bold" textAlign="center" mb={16} fontSize="4xl">
+        <Text
+          fontWeight="bold"
+          textAlign="center"
+          mt={20}
+          mb={20}
+          fontSize="4xl"
+        >
           Skills
         </Text>
 

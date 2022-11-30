@@ -11,6 +11,7 @@ import { FaSun, FaMoon, FaGithub, FaLinkedin } from "react-icons/fa";
 import Header from "./components/Header";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import Experience from "./components/Experience";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
@@ -28,6 +29,7 @@ function App() {
       <Navbar></Navbar>
       <Header></Header>
       <About></About>
+      <Experience></Experience>
       <Project></Project>
       <Skills></Skills>
       <Contact></Contact>

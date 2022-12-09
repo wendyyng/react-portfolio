@@ -15,7 +15,7 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 
-import { experience } from "../experience.data";
+import { experience } from "../data/experience.data";
 
 const Experience = () => {
   return (

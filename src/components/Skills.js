@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import styled from "styled-components";
 
-import { skills } from "../skills.data";
+import { skills } from "../data/skills.data";
 
 const SkillsSection = styled.div`
   width: 100%;

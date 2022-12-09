@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import "@fontsource/montserrat";
-import theme from "./theme";
+import theme from "./theme/theme";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

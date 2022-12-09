@@ -3,7 +3,7 @@ import { Image, Flex, Stack, Text, Box, Link, Wrap } from "@chakra-ui/react";
 import { Center, chakra } from "@chakra-ui/react";
 import styled from "styled-components";
 
-import { projects } from "../projects.data";
+import { projects } from "../data/projects.data";
 
 const ProjectSection = styled.div`
   margin-top: 0 !important;

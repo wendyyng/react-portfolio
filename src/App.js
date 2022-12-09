@@ -1,23 +1,16 @@
-import "./App.css";
 import { useEffect } from "react";
-import { Flex, VStack, Heading } from "@chakra-ui/layout";
-import {
-  ColorModeContext,
-  IconButton,
-  useColorMode,
-  Spacer,
-} from "@chakra-ui/react";
-import { FaSun, FaMoon, FaGithub, FaLinkedin } from "react-icons/fa";
-import Header from "./components/Header";
-import Contact from "./components/Contact";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Project from "./components/Project";
-import Footer from "./components/Footer";
-import Skills from "./components/Skills";
-import Navbar from "./components/Navbar";
+import { VStack } from "@chakra-ui/layout";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Project from "./components/Project";
+import Skills from "./components/Skills";
 
 function App() {
   useEffect(() => {

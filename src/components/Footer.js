@@ -13,7 +13,10 @@ const FooterSection = styled.div`
 function Footer() {
   return (
     <FooterSection>
-      <Center>Created using React & Chakra UI &copy; Wendy Ng | {new Date().getFullYear()}</Center>
+      <Center>
+        Created using React & Chakra UI &copy; Wendy Ng |{" "}
+        {new Date().getFullYear()}
+      </Center>
     </FooterSection>
   );
 }

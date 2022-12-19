@@ -77,27 +77,28 @@ const Experience = () => {
                       })}
                     </UnorderedList>
                   </CardBody>
-
-                  <CardFooter py={5}>
-                    <Link
-                      href={exp.github_link}
-                      isExternal
-                      color="gray.100"
-                      bgGradient="linear(to-l, #7928CA, #FF0080)"
-                      px={5}
-                      py={3}
-                      fontWeight="semibold"
-                      rounded="md"
-                      _hover={{
-                        bgGradient: "linear(to-r, green.200, pink.500)",
-                      }}
-                      _dark={{
-                        bg: "purple.700",
-                      }}
-                    >
-                      GitHub Repo
-                    </Link>
-                  </CardFooter>
+                  {exp.github_link && (
+                    <CardFooter py={5}>
+                      <Link
+                        href={exp.github_link}
+                        isExternal
+                        color="gray.100"
+                        bgGradient="linear(to-l, #7928CA, #FF0080)"
+                        px={5}
+                        py={3}
+                        fontWeight="semibold"
+                        rounded="md"
+                        _hover={{
+                          bgGradient: "linear(to-r, green.200, pink.500)",
+                        }}
+                        _dark={{
+                          bg: "purple.700",
+                        }}
+                      >
+                        GitHub Repo
+                      </Link>
+                    </CardFooter>
+                  )}
                 </Stack>
               </Card>
             );

@@ -65,20 +65,21 @@ const Experience = () => {
                 />
 
                 <Stack>
-                  <CardBody p={5} pb={0}>
+                  <CardBody p={4} pb={0}>
                     <Heading size="md" pb={1}>
                       {exp.position_title}
                     </Heading>
                     <Text pb={1}>{exp.company}</Text>
                     <Text pb={2}>{exp.date}</Text>
-                    <UnorderedList>
+                    <UnorderedList mb={2}>
                       {exp.description.map((item) => {
                         return <ListItem>{item}</ListItem>;
                       })}
                     </UnorderedList>
+                    <Text as="b">Skills: {exp.skills}</Text>
                   </CardBody>
-                  {exp.github_link && (
-                    <CardFooter py={5}>
+                  <CardFooter p={1}>
+                    {exp.github_link && (
                       <Link
                         href={exp.github_link}
                         isExternal
@@ -97,8 +98,8 @@ const Experience = () => {
                       >
                         GitHub Repo
                       </Link>
-                    </CardFooter>
-                  )}
+                    )}
+                  </CardFooter>
                 </Stack>
               </Card>
             );

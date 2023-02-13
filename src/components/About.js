@@ -46,7 +46,7 @@ function About() {
                 Canada. Having completed the full-stack web development program
                 at CodeCore College, I am now looking for a full-time position
                 in web development. Prior to this program, I have worked in
-                international relations and accounting. I really love the 'aha'
+                higher education and accounting. I really love the 'aha'
                 moments in programming and am passionate about making efficient,
                 beautiful and user-friendly web applications.
               </Text>

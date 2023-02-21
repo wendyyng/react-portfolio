@@ -1,6 +1,6 @@
 export const experience = [
   {
-    position_title: "Software Developer (Mentee)",
+    position_title: "Software Developer",
     company: "OpenTree Education",
     date: "Oct - Dec 2022",
     description: [
@@ -14,7 +14,7 @@ export const experience = [
       "https://user-images.githubusercontent.com/71687298/204715984-926cf6ce-fc8c-4d75-90b2-11aa719c6f7a.png",
   },
   {
-    position_title: "Open Source Contributor",
+    position_title: "Frontend Developer",
     company: "Multiplied By One Org | Trauma and Dissociative Disorders",
     date: "Oct - Dec 2022",
     description: [

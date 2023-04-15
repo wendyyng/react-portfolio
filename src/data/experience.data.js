@@ -1,5 +1,18 @@
 export const experience = [
   {
+    position_title: "Web Developer",
+    company: "Society for Canadian Women in Science and Technology",
+    date: "Oct 2022 - Feb 2023",
+    description: [
+      "Designed mockups, wireframes, and layouts for 'ms. infinity' program pages using Figma to improve overall functionality and user experience",
+      "Consulted with Youth Engagement Director to organize and gather organization's website requirements, ensuring design aligned with organization's goals",
+      "Managed project timeline and gathered ideas from team members using Miro, incorporating input into final design",
+    ],
+    skills: "Figma, UI/UX Design, Project Management",
+    company_logo:
+      "https://user-images.githubusercontent.com/71687298/208505498-a6fad389-d70b-41cb-b989-932835e5804b.jpg",
+  },
+  {
     position_title: "Software Developer",
     company: "OpenTree Education",
     date: "Oct - Dec 2022",

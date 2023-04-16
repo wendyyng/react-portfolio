@@ -33,7 +33,7 @@ export const projects = [
   },
   {
     title: "React Movie TV App",
-    stack: "React, JavaScript, HTML, CSS, TMDB API",
+    stack: "React, JavaScript, HTML, CSS, Material UI, TMDB API",
     description:
       "An app where you can search data about Movies and TV Series by their title. This website fetches the TMDB API and was built with React and Material UI.",
     imageUrl:

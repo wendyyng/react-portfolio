@@ -8,7 +8,7 @@ export const projects = [
     imageUrl:
       "https://user-images.githubusercontent.com/71687298/188759181-74097d81-816a-40b0-8e8e-69fd80246a6e.png",
     githubLink: "https://github.com/wendyyng/social_media_app",
-    liveLink: "https://www.youtube.com/watch?v=XcQoe7GQQP4",
+    liveLink: "https://friendme-app.herokuapp.com/",
   },
   {
     title: "Delish",
@@ -18,7 +18,7 @@ export const projects = [
     imageUrl:
       "https://user-images.githubusercontent.com/71687298/189031637-3f7faac4-a811-4df8-a47e-ec2d4f9a5895.png",
     githubLink: "https://github.com/wendyyng/Homemade_Meals_APP",
-    liveLink: "https://www.youtube.com/watch?v=sMqee24ct54",
+    liveLink: "https://delish.herokuapp.com/",
   },
   {
     title: "Biddr",

@@ -1,5 +1,16 @@
 export const projects = [
   {
+    title: "Rhizone LMS",
+    stack:
+      "TypeScript, React, Node.js, Express, Material UI, MySQL, Docker",
+    description:
+      "The Rhizone LMS is a learning management system focused on self-reflection - features include: calendar, reflection, competencies and meetings.",
+    imageUrl:
+      "https://user-images.githubusercontent.com/71687298/232264769-40385ea6-664d-40c2-ad3a-d51f4d1a3603.png",
+    githubLink: "https://github.com/wendyyng/rhizone-lms",
+    liveLink: "https://rhi.zone/",
+  },
+  {
     title: "FriendMe",
     stack:
       "Ruby on Rails, ERB, Semantic UI, Bootstrap, HTML, CSS, Javascript, Google Maps API, PostgreSQL",
@@ -19,6 +30,16 @@ export const projects = [
       "https://user-images.githubusercontent.com/71687298/189031637-3f7faac4-a811-4df8-a47e-ec2d4f9a5895.png",
     githubLink: "https://github.com/wendyyng/Homemade_Meals_APP",
     liveLink: "https://delish.herokuapp.com/",
+  },
+  {
+    title: "React Movie TV App",
+    stack: "React, JavaScript, HTML, CSS, TMDB API",
+    description:
+      "An app where you can search data about Movies and TV Series by their title. This website fetches the TMDB API and was built with React and Material UI.",
+    imageUrl:
+      "https://user-images.githubusercontent.com/71687298/232263782-be9d8a5c-9296-48e3-bded-74450195ee22.png",
+    githubLink: "https://github.com/wendyyng/react-movie-app",
+    liveLink: "https://react-movie-tv-app.netlify.app/",
   },
   {
     title: "Biddr",
@@ -41,16 +62,16 @@ export const projects = [
     githubLink: "https://github.com/wendyyng/Super_Team_Picker",
     liveLink: "https://youtu.be/XdJQSqc3XBE",
   },
-  {
-    title: "#ThankYouFrontlineWorkers Project",
-    stack: "PHP, MySQL, HTML, CSS, Bootstrap",
-    description:
-      "A responsive website to collect thank you messages from the community to express gratitude for the frontline workers.",
-    imageUrl:
-      "https://user-images.githubusercontent.com/71687298/194402137-476d8e2e-899c-48cb-ab4f-e3b64790bfcc.png",
-    githubLink: "https://github.com/wendyyng/php_thank_you",
-    liveLink: "",
-  },
+  // {
+  //   title: "#ThankYouFrontlineWorkers Project",
+  //   stack: "PHP, MySQL, HTML, CSS, Bootstrap",
+  //   description:
+  //     "A responsive website to collect thank you messages from the community to express gratitude for the frontline workers.",
+  //   imageUrl:
+  //     "https://user-images.githubusercontent.com/71687298/194402137-476d8e2e-899c-48cb-ab4f-e3b64790bfcc.png",
+  //   githubLink: "https://github.com/wendyyng/php_thank_you",
+  //   liveLink: "",
+  // },
   {
     title: "Hangman",
     stack: "Javascript, jQuery, Bootstrap, HTML, CSS",

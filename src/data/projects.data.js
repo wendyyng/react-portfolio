@@ -91,17 +91,18 @@ export const projects = [
       "https://user-images.githubusercontent.com/71687298/189562835-6921ed7f-1388-438b-ac81-79f767e0dcd6.png",
     githubLink: "https://github.com/wendyyng/cutiecats_search",
     liveLink: "http://cutiecats-search.vercel.app/",
-  },
-  {
-    title: "Portfolio Website",
-    stack: "React.js, Chakra UI, JavaScript, HTML, CSS",
-    description:
-      "This fully responsive portfolio website was built with React and Chakra UI. Click the sun/moon icon at the top-right corner to toggle between dark and light mode.",
-    imageUrl:
-      "https://user-images.githubusercontent.com/71687298/190548542-9d68ccc2-69b0-442f-b206-aa4f5d872374.png",
-    githubLink: "https://github.com/wendyyng/react-portfolio",
-    liveLink: "https://wendy-ng.vercel.app/",
-  },
+  }
+  // ,
+  // {
+  //   title: "Portfolio Website",
+  //   stack: "React.js, Chakra UI, JavaScript, HTML, CSS",
+  //   description:
+  //     "This fully responsive portfolio website was built with React and Chakra UI. Click the sun/moon icon at the top-right corner to toggle between dark and light mode.",
+  //   imageUrl:
+  //     "https://user-images.githubusercontent.com/71687298/190548542-9d68ccc2-69b0-442f-b206-aa4f5d872374.png",
+  //   githubLink: "https://github.com/wendyyng/react-portfolio",
+  //   liveLink: "https://wendy-ng.vercel.app/",
+  // },
 
   // {
   //   title: "Calculator",

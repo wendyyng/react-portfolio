@@ -43,7 +43,7 @@ function Header() {
             Wendy Ng
           </Text>
           <Text fontSize="3xl" color={isDark ? "gray.200" : "gray.600"}>
-            I am a web developer
+            I am a software developer
           </Text>
 
           {/* <Button p={7}  mt={7} colorScheme="pink"   _hover={{

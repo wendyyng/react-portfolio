@@ -42,13 +42,13 @@ function About() {
                 About Me
               </Text>
               <Text fontSize="5x1">
-                Hi, I am Wendy Ng, a full-stack developer based in Vancouver BC,
-                Canada. Having completed the full-stack web development program
-                at CodeCore College, I am now looking for a full-time position
-                in web development. Prior to this program, I have worked in
-                higher education and accounting. I really love the 'aha'
-                moments in programming and am passionate about making efficient,
-                beautiful and user-friendly web applications.
+                Hi, I'm Wendy Ng, a dedicated software developer actively seeking new opportunities. 
+                With a background as a frontend developer at PlaceSpeak, I led significant projects such as 
+                homepage redesigns and complex feature implementations. 
+                I thrive on the 'aha' moments in programming and am deeply passionate 
+                about crafting efficient, elegant, and user-friendly web applications. 
+                Currently, I am eager to secure a full-time position in software development 
+                where I can continue to expand my skills and contribute meaningfully.
               </Text>
               <br />
 

@@ -57,10 +57,10 @@ function About() {
                   Education
                 </Text>
                 <Text fontSize="5x1">
-                  Diploma, Web Development - CodeCore College
+                  Diploma, Web Development - CodeCore College, Canada
                 </Text>
                 <Text fontSize="5x1">
-                  Bachelor of Arts, Economics - University of Calgary
+                  Bachelor of Arts, Economics - University of Calgary, Canada
                 </Text>
                 {/* <Text fontSize="5x1">Post-Graduate Diploma, Accounting - University of British Columbia</Text> */}
               </VStack>

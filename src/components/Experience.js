@@ -79,9 +79,9 @@ const Experience = () => {
                     <Text as="b">Skills: {exp.skills}</Text>
                   </CardBody>
                   <CardFooter p={1}>
-                    {exp.github_link && (
+                    {exp.website ? (
                       <Link
-                        href={exp.github_link}
+                        href={exp.website}
                         isExternal
                         color="gray.100"
                         bgGradient="linear(to-l, #7928CA, #FF0080)"
@@ -96,9 +96,30 @@ const Experience = () => {
                           bg: "purple.700",
                         }}
                       >
-                        GitHub Repo
+                        Website
                       </Link>
-                    )}
+                      ) : (
+                      exp.github_link && (
+                        <Link
+                          href={exp.github_link}
+                          isExternal
+                          color="gray.100"
+                          bgGradient="linear(to-l, #7928CA, #FF0080)"
+                          px={5}
+                          py={3}
+                          fontWeight="semibold"
+                          rounded="md"
+                          _hover={{
+                            bgGradient: "linear(to-r, green.200, pink.500)",
+                          }}
+                          _dark={{
+                            bg: "purple.700",
+                          }}
+                        >
+                          GitHub Repo
+                        </Link>
+                      )
+                      )}
                   </CardFooter>
                 </Stack>
               </Card>

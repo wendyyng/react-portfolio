@@ -1,6 +1,6 @@
 export const experience = [
   {
-    position_title: "Frontend Developer",
+    position_title: "Frontend Developer Intern",
     company: "PlaceSpeak",
     date: "May 2023 - Jan 2024",
     description: [
@@ -16,7 +16,7 @@ export const experience = [
       "https://www.placespeak.com/static/img/logos/logos_download/placespeak_square_logo.png", 
   },
   {
-    position_title: "Web Developer",
+    position_title: "Web Developer (Volunteer)",
     company: "Society for Canadian Women in Science and Technology",
     date: "Oct 2022 - Feb 2023",
     description: [
@@ -29,7 +29,7 @@ export const experience = [
       "https://user-images.githubusercontent.com/71687298/208505498-a6fad389-d70b-41cb-b989-932835e5804b.jpg",
   },
   {
-    position_title: "Software Developer",
+    position_title: "Open Source Developer",
     company: "OpenTree Education",
     date: "Oct - Dec 2022",
     description: [

@@ -8,7 +8,7 @@ export const projects = [
     imageUrl:
       "https://user-images.githubusercontent.com/71687298/232264769-40385ea6-664d-40c2-ad3a-d51f4d1a3603.png",
     githubLink: "https://github.com/wendyyng/rhizone-lms",
-    liveLink: "https://rhi.zone/",
+    liveLink: "https://www.youtube.com/watch?v=Qi0XeOApP6c",
   },
   {
     title: "FriendMe",
@@ -29,7 +29,7 @@ export const projects = [
     imageUrl:
       "https://user-images.githubusercontent.com/71687298/189031637-3f7faac4-a811-4df8-a47e-ec2d4f9a5895.png",
     githubLink: "https://github.com/wendyyng/Homemade_Meals_APP",
-    liveLink: "https://delish.herokuapp.com/",
+    liveLink: "https://youtu.be/sMqee24ct54",
   },
   {
     title: "React Movie TV App",

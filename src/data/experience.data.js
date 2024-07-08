@@ -25,6 +25,7 @@ export const experience = [
       "Managed project timeline and gathered ideas from team members using Miro, incorporating input into final design",
     ],
     skills: "Figma, UI/UX Design, Project Management",
+    website: "https://scwist.ca/programs/ms-infinity/",
     company_logo:
       "https://user-images.githubusercontent.com/71687298/208505498-a6fad389-d70b-41cb-b989-932835e5804b.jpg",
   },

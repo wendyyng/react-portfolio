@@ -19,7 +19,7 @@ function Chat() {
         <Box p={4}>
              <Center>
                 <Text fontSize="4xl" fontWeight="bold">
-                    Chatbox
+                    WendyQ&A
                 </Text>
             </Center>
             <Input

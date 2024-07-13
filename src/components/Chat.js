@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { Input, Button, Box, Text, Center, VStack, HStack } from '@chakra-ui/react';
 
 function Chat() {
     const [message, setMessage] = useState('');
     const [chatHistory, setChatHistory] = useState([]);
+    const chatContainerRef = useRef(null);
 
     const sendMessage = async () => {
          if (!message) return; // Don't send empty messages
@@ -29,6 +30,13 @@ function Chat() {
         }
     };
 
+    useEffect(() => {
+    // Scroll to the bottom whenever chatHistory changes
+    if (chatContainerRef.current) {
+        chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+    }
+    }, [chatHistory]);
+
     return (
         <Box p={4}>
              <Center>
@@ -43,7 +51,9 @@ function Chat() {
                 borderWidth="1px"
                 borderRadius="md"
                 h="200px" // Fixed height for the chat history container
+                w='600px'
                 overflowY="scroll" // Enable vertical scrolling
+                ref={chatContainerRef} // Reference to the chat container
             >
                  <VStack spacing={4} mt={4}>
                 {chatHistory.map((msg, index) => (

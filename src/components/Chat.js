@@ -1,19 +1,30 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import { Input, Button, Box, Text, Center, VStack, HStack } from '@chakra-ui/react';
+import { Input, Button, Box, Text, Center, VStack, HStack, Alert, AlertIcon } from '@chakra-ui/react';
 
 function Chat() {
     const [message, setMessage] = useState('');
     const [chatHistory, setChatHistory] = useState([]);
+    const [error, setError] = useState('');
     const chatContainerRef = useRef(null);
+
+    const countWords = (str) => {
+        return str.trim().split(/\s+/).length;
+    };
 
     const sendMessage = async () => {
          if (!message) return; // Don't send empty messages
          console.log(message)
+         if (countWords(message) > 50) {
+            setError('Message cannot exceed 50 words.');
+            return;
+        }
+
         const userMessage = { role: 'user', content: message };
 
         setChatHistory([...chatHistory, userMessage]);
         setMessage('');
+        setError('');
 
         try {
             const result = await axios.post('http://127.0.0.1:5000/api/chat', { message }, {
@@ -26,7 +37,7 @@ function Chat() {
         } catch (error) {
             console.error('Error:', error);
             const errorMessage = { role: 'bot', content: 'An error occurred. Please try again.' };
-            setChatHistory([...chatHistory, userMessage, errorMessage]);
+             setChatHistory(prevChatHistory => [...prevChatHistory, userMessage, errorMessage]);
         }
     };
 
@@ -70,6 +81,13 @@ function Chat() {
                 ))}
             </VStack>
             </Box>
+            {error && (
+                <Alert status="error" mt={2}>
+                    <AlertIcon />
+                    {error}
+                </Alert>
+            )}
+
             <Input
                 variant="filled"
                 placeholder="Ask something about Wendy..."

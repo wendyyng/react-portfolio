@@ -43,12 +43,11 @@ function About() {
               </Text>
               <Text fontSize="5x1">
                 Hi, I'm Wendy Ng, a dedicated software developer actively seeking new opportunities. 
-                Originally from Malaysia, born in Japan, and having studied and worked in Canada, 
-                I am fluent in English, Mandarin, Japanese, and Malay. 
+                I love the 'aha' moments in programming and am deeply passionate about 
+                crafting efficient, elegant, and user-friendly web applications. 
                 With experience as a Frontend Developer at PlaceSpeak, 
                 I led significant projects such as homepage redesigns, client-requested feature implementations, 
-                and UI/UX improvements. I love the 'aha' moments in programming and am deeply passionate about 
-                crafting efficient, elegant, and user-friendly web applications. 
+                and UI/UX improvements. 
                 Currently, I am eager to secure a full-time position in software development 
                 where I can continue to expand my skills and contribute meaningfully.
               </Text>

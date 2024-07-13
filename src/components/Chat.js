@@ -15,7 +15,7 @@ function Chat() {
     useEffect(() => {
         const welcomeMessage = {
             role: 'bot',
-            content: "Welcome! This chatbox is powered by the Powered by OpenAI's GPT-3.5 Turbo to answer questions about Wendy. Feel free to ask anything!"
+            content: "Welcome! This chatbox is powered by the OpenAI's GPT-3.5 Turbo to answer questions about Wendy."
         };
         setChatHistory([welcomeMessage]);
     }, []);

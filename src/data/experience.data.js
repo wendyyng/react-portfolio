@@ -1,6 +1,6 @@
 export const experience = [
   {
-    position_title: "Frontend Developer Intern",
+    position_title: "Frontend Developer",
     company: "PlaceSpeak",
     date: "May 2023 - Jan 2024",
     description: [

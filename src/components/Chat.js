@@ -12,6 +12,14 @@ function Chat() {
     const [isMinimized, setIsMinimized] = useState(false);
     const chatContainerRef = useRef(null);
 
+    useEffect(() => {
+        const welcomeMessage = {
+            role: 'bot',
+            content: "Welcome! This chatbox is powered by the OpenAI API to answer questions about Wendy. Feel free to ask anything!"
+        };
+        setChatHistory([welcomeMessage]);
+    }, []);
+
     const sendMessage = async () => {
         if (!message) return; // Don't send empty messages
         console.log(message);
@@ -72,7 +80,7 @@ function Chat() {
                 alignItems="center"
             >
                 <Center>
-                    <FaComment size={30} color="#FED7E2" />
+                    <FaComment size={30} color="#ED64A6" />
                 </Center>
             </Box>
         );

@@ -1,17 +1,31 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Input, Button, Box, Text, Center } from '@chakra-ui/react';
+import { Input, Button, Box, Text, Center, VStack, HStack } from '@chakra-ui/react';
 
 function Chat() {
     const [message, setMessage] = useState('');
-    const [response, setResponse] = useState('');
+    const [chatHistory, setChatHistory] = useState([]);
 
     const sendMessage = async () => {
+         if (!message) return; // Don't send empty messages
+         console.log(message)
+        const userMessage = { role: 'user', content: message };
+
+        setChatHistory([...chatHistory, userMessage]);
+        setMessage('');
+
         try {
-            const response = await axios.post('/api/chat', { message });
-            setResponse(response.data.choices[0].text);
+            const result = await axios.post('http://127.0.0.1:5000/api/chat', { message }, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            const botResponse = { role: 'bot', content: result.data.response };
+            setChatHistory([...chatHistory, userMessage, botResponse]);
         } catch (error) {
             console.error('Error:', error);
+            const errorMessage = { role: 'bot', content: 'An error occurred. Please try again.' };
+            setChatHistory([...chatHistory, userMessage, errorMessage]);
         }
     };
 
@@ -22,6 +36,20 @@ function Chat() {
                     WendyQ&A
                 </Text>
             </Center>
+                 <VStack spacing={4} mt={4}>
+                {chatHistory.map((msg, index) => (
+                    <HStack
+                        key={index}
+                        alignSelf={msg.role === 'user' ? 'flex-end' : 'flex-start'}
+                        bg={msg.role === 'user' ? 'blue.100' : 'gray.100'}
+                        borderRadius="md"
+                        p={3}
+                        maxW="70%"
+                    >
+                        <Text>{msg.content}</Text>
+                    </HStack>
+                ))}
+            </VStack>
             <Input
                 variant="filled"
                 placeholder="Ask something about Wendy..."
@@ -46,11 +74,7 @@ function Chat() {
                 >
                 Send
             </Button>
-            {response && (
-                <Box mt={4} p={4} borderWidth="1px" borderRadius="md">
-                    <Text>{response}</Text>
-                </Box>
-            )}
+
         </Box>
     );
 }

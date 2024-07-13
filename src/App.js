@@ -11,6 +11,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
+import Chat from "./components/Chat"
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
       <Navbar></Navbar>
       <Header></Header>
       <About></About>
+      <Chat></Chat>
       <Experience></Experience>
       <Project></Project>
       <Skills></Skills>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import { Input, Button, Box, Text, Center, VStack, HStack, Alert, AlertIcon, Avatar  } from '@chakra-ui/react';
-import { FaRobot, FaPaperPlane } from 'react-icons/fa';
+import { Input, Button, Box, Text, VStack, HStack, Alert, AlertIcon, Avatar, Flex  } from '@chakra-ui/react';
+import { FaRobot, FaPaperPlane, FaTimes } from 'react-icons/fa';
 
 const MAX_CHAR_LENGTH = 100;
 
@@ -9,6 +9,7 @@ function Chat() {
     const [message, setMessage] = useState('');
     const [chatHistory, setChatHistory] = useState([]);
     const [error, setError] = useState('');
+    const [isOpen, setIsOpen] = useState(true);
     const chatContainerRef = useRef(null);
 
     const sendMessage = async () => {
@@ -40,6 +41,10 @@ function Chat() {
         }
     };
 
+    const handleClose = () => {
+        setIsOpen(false); // Close the chatbox
+    };
+
     useEffect(() => {
     // Scroll to the bottom whenever chatHistory changes
     if (chatContainerRef.current) {
@@ -47,39 +52,50 @@ function Chat() {
     }
     }, [chatHistory]);
 
+    if (!isOpen) {
+        return null; // Render nothing if chatbox is closed
+    }
+
     return (
-        <Box p={4}>
-             <Center>
-                <Text fontSize="4xl" fontWeight="bold">
-                    WendyQ&A
-                </Text>
-            </Center>
+         <Box
+            p={4}
+            position="fixed"
+            bottom={4}
+            right={4}
+            borderRadius="xl"
+            boxShadow="md"
+            bg="white"
+            zIndex={10}
+        >
+           <Box ml={2} >
+                <FaTimes size={20} color="#CBD5E0" cursor="pointer" onClick={handleClose}/>
+            </Box>
             <Box
                 mt={4}
                 p={4}
                 mb={1}
-                borderWidth="1px"
-                borderRadius="md"
+                borderRadius="xl"
                 h="200px"
                 w='600px'
                 overflowY="scroll" // Enable vertical scrolling
                 ref={chatContainerRef} // Reference to the chat container
+                border="1px solid #CBD5E0"
             >
-                 <VStack spacing={4} mt={4}>
-                {chatHistory.map((msg, index) => (
-                   <HStack
-                        key={index}
-                        alignSelf={msg.role === 'user' ? 'flex-end' : 'flex-start'}
-                        bg={msg.role === 'user' ? 'blue.100' : 'pink.100'}
-                        borderRadius="md"
-                        p={3}
-                        maxW="70%"
-                    >
-                        {msg.role === 'bot' && <Avatar icon={<FaRobot />} size="sm" mr={2} />}
-                        <Text>{msg.content}</Text>
-                    </HStack>
-                ))}
-            </VStack>
+                <VStack spacing={4} mt={4}>
+                    {chatHistory.map((msg, index) => (
+                       <HStack
+                            key={index}
+                            alignSelf={msg.role === 'user' ? 'flex-end' : 'flex-start'}
+                            bg={msg.role === 'user' ? 'blue.100' : 'pink.100'}
+                            borderRadius="md"
+                            p={3}
+                            maxW="70%"
+                        >
+                            {msg.role === 'bot' && <Avatar icon={<FaRobot />} size="sm" mr={2} />}
+                            <Text>{msg.content}</Text>
+                        </HStack>
+                    ))}
+                </VStack>
             </Box>
             {error && (
                 <Alert status="error" mt={2}>
@@ -87,13 +103,14 @@ function Chat() {
                     {error}
                 </Alert>
             )}
-            <HStack>
+            <Flex align="center">
                 <Input
                     variant="filled"
                     placeholder="Ask something about Wendy..."
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     maxLength={MAX_CHAR_LENGTH}
+                    borderRadius="xl"
                 />
                 <Button
                     color="gray.100"
@@ -101,7 +118,7 @@ function Chat() {
                     px={3}
                     py={3}
                     fontWeight="semibold"
-                    rounded="md"
+                    rounded="full"
                     _hover={{
                         bgGradient: "linear(to-r, pink.400, purple.400)",
                     }}
@@ -110,10 +127,9 @@ function Chat() {
                     }}
                     onClick={sendMessage}
                 >
-                    <FaPaperPlane size={20} /> {/* Replace text with FaPaperPlane icon */}
+                    <FaPaperPlane size={20} />
                 </Button>
-            </HStack>
-
+            </Flex>
         </Box>
     );
 }

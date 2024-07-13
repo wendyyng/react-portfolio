@@ -36,6 +36,15 @@ function Chat() {
                     WendyQ&A
                 </Text>
             </Center>
+            <Box
+                mt={4}
+                p={4}
+                mb={1}
+                borderWidth="1px"
+                borderRadius="md"
+                h="200px" // Fixed height for the chat history container
+                overflowY="scroll" // Enable vertical scrolling
+            >
                  <VStack spacing={4} mt={4}>
                 {chatHistory.map((msg, index) => (
                     <HStack
@@ -50,6 +59,7 @@ function Chat() {
                     </HStack>
                 ))}
             </VStack>
+            </Box>
             <Input
                 variant="filled"
                 placeholder="Ask something about Wendy..."

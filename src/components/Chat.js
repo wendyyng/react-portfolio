@@ -15,7 +15,7 @@ function Chat() {
     useEffect(() => {
         const welcomeMessage = {
             role: 'bot',
-            content: "Welcome! This chatbox is powered by the OpenAI's GPT-3.5 Turbo to answer questions about Wendy."
+            content: "Welcome! This chatbox is here to answer questions about Wendy. Developed with Python, Flask, OpenAI's GPT-3.5 Turbo API, AWS EC2, and GitHub Actions."
         };
         setChatHistory([welcomeMessage]);
     }, []);
@@ -97,7 +97,7 @@ function Chat() {
             boxShadow="md"
             bg="white"
             zIndex={10}
-            width={{ base: '100%', sm: '80%', md: '70%', lg: '50%' }}
+            width={{ base: '90%', sm: '80%', md: '70%', lg: '50%' }}
             maxW="630px"
             // left="0.2rem"
         >

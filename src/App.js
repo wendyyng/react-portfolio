@@ -23,7 +23,7 @@ function App() {
       <Navbar></Navbar>
       <Header></Header>
       <About></About>
-      <Chat></Chat>
+      {/* <Chat></Chat> */}
       <Experience></Experience>
       <Project></Project>
       <Skills></Skills>

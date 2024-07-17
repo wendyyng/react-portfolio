@@ -35,7 +35,7 @@ function Chat() {
         setError('');
 
         try {
-            const result = await axios.post('http://54.209.106.214/api/chat', { message }, {
+            const result = await axios.post('https://54.209.106.214/api/chat', { message }, {
                 headers: {
                     'Content-Type': 'application/json'
                 }

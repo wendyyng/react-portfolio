@@ -26,7 +26,7 @@ const AboutSection = styled.div`
 
 function About() {
   return (
-    <Stack py={20}>
+    <Stack py={20} pb={5}>
       <AboutSection>
         <Flex id="about-container">
           <Flex alignItems="center" justifyContent="center" mb={8}>

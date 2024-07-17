@@ -29,10 +29,20 @@ export const skills = [
     imgUrl:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
-  {
-    name: "ExpressJs",
+    {
+    name: "Python",
     imgUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+  },
+  {
+    name: "Django",
+    imgUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
+  },
+    {
+    name: "Flask",
+    imgUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
   },
   {
     name: "PostgreSQL",
@@ -65,11 +75,6 @@ export const skills = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
   },
   {
-    name: "Bootstrap",
-    imgUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-  },
-  {
     name: "jQuery",
     imgUrl:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg",
@@ -78,11 +83,6 @@ export const skills = [
     name: "Git",
     imgUrl:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-  },
-  {
-    name: "RSpec",
-    imgUrl:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rspec/rspec-original-wordmark.svg",
   },
   {
     name: "Jest",

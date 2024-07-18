@@ -1,4 +1,4 @@
-# Portfolio Website featuring personal chatbot powered by GPT-3.5 Turbo API
+# Portfolio Website featuring Personal Chatbot Powered by GPT-3.5 Turbo API
 
 A fully responsive portfolio website to display my projects and skills. Visitors can click the sun/moon icon at the top-right corner to toggle between dark and light mode. This website can be installed as a Progressive Web App (PWA) on desktop and mobile devices for offline viewing.
 See the backend's repo here: https://github.com/wendyyng/wendy-bot

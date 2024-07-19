@@ -47,7 +47,7 @@ function Contact() {
             }}
           />
         </Link>
-        <Link id="icons" href="mailto:yng@ucalgary.ca" isExternal>
+        <Link id="icons" href="mailto:yw.wendy.ng@gmail.com" isExternal>
           <Icon
             as={MdEmail}
             boxSize="50"

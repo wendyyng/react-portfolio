@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { VStack } from "@chakra-ui/layout";
+import { Analytics } from '@vercel/analytics/react';
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -29,6 +31,7 @@ function App() {
       <Skills></Skills>
       <Contact></Contact>
       <Footer></Footer>
+      <Analytics debug={false} />
     </VStack>
   );
 }

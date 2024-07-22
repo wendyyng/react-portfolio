@@ -1,21 +1,25 @@
-.transition-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+.transition-page-content {
+    transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-.transition-content {
-    transition: opacity 0.2s ease-in-out;
-}
-
-.fade-out {
+.page-fade-out {
     opacity: 0;
+    background-color: #eee4ee;
 }
 
-.fade-in {
+.page-fade-in {
     opacity: 1;
+    background-color: #ffffff;
 }
 
 .cube-container {
-    cursor: pointer;
+    /* cursor: pointer; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee4ee;
+    margin: 0;
+    overflow: hidden;
 }

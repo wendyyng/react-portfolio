@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ThreeCube from './components/ThreeCube';
 import MainPage from './components/MainPage';
 import './App.css';
-import Aos from "aos";
 import "aos/dist/aos.css";
 
 function App() {
@@ -11,20 +10,16 @@ function App() {
   const [fadeClass, setFadeClass] = useState('');
 
   const handleCubeClick = () => {
-    setFadeClass('fade-out');
+    setFadeClass('page-fade-out');
     setTimeout(() => {
       setShowMainPage(true);
-      setFadeClass('fade-in');
-    }, 1000); // Match the fade-out duration
+      setFadeClass('page-fade-in');
+    }, 100);
   };
-
-  useEffect(() => {
-    Aos.init({ duration: 1500 });
-  }, []);
 
   return (
     <div className={`transition-container ${fadeClass}`}>
-      <div className={`transition-content ${fadeClass}`}>
+      <div className={`transition-page-content ${fadeClass}`}>
         {showMainPage ? (
           <MainPage />
         ) : (

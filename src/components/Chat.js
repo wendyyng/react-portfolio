@@ -9,7 +9,7 @@ function Chat() {
     const [message, setMessage] = useState('');
     const [chatHistory, setChatHistory] = useState([]);
     const [error, setError] = useState('');
-    const [isMinimized, setIsMinimized] = useState(false);
+    const [isMinimized, setIsMinimized] = useState(true);
     const chatContainerRef = useRef(null);
 
     useEffect(() => {

@@ -50,7 +50,7 @@ const ThreeCube = ({ onClick }) => {
       const textGeometry = new TextGeometry("Wendy's Portfolio", {
         font: font,
         size: 0.4,
-        height: 0.1
+        depth: 0.1
       });
 
       // Create canvas for linear gradient texture

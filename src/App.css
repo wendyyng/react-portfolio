@@ -1,8 +1,8 @@
-.transition-page-content {
+/* .transition-page-content {
     transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
-}
+} */
 
-.page-fade-out {
+/* .page-fade-out {
     opacity: 0;
     background-color: #eee4ee;
 }
@@ -10,7 +10,7 @@
 .page-fade-in {
     opacity: 1;
     background-color: #ffffff;
-}
+} */
 
 .cube-container {
     /* cursor: pointer; */

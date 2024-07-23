@@ -1,6 +1,6 @@
 # Portfolio Website featuring Personal Chatbot Powered by GPT-4o-mini API
 
-A fully responsive portfolio website featuring a personal chatbot that answers questions about my background, skills, and projects. This website can be installed as a Progressive Web App (PWA) on desktop and mobile devices for offline viewing.
+A fully responsive portfolio website featuring a personal chatbot that answers questions about my background, skills, and projects. This website includes a Three.js animation of a rotating cube that provides an engaging visual element. This website can be installed as a Progressive Web App (PWA) on desktop and mobile devices for offline viewing.
 See the backend's repo here: https://github.com/wendyyng/wendy-bot
 
 ![download](https://github.com/user-attachments/assets/efba7028-acb7-438d-8e49-a1661ecb8193)

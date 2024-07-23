@@ -3,6 +3,8 @@
 A fully responsive portfolio website featuring a personal chatbot that answers questions about my background, skills, and projects. This website can be installed as a Progressive Web App (PWA) on desktop and mobile devices for offline viewing.
 See the backend's repo here: https://github.com/wendyyng/wendy-bot
 
+![download](https://github.com/user-attachments/assets/efba7028-acb7-438d-8e49-a1661ecb8193)
+
 ## Links
 
 ### https://wendy-ng.vercel.app/
@@ -11,6 +13,7 @@ See the backend's repo here: https://github.com/wendyyng/wendy-bot
 
 - React
 - Chakra UI
+- Three.js (JavaScript 3D library)
 - Styled Components
 - AOS
 - HTML

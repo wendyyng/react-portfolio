@@ -50,7 +50,7 @@ const ThreeCube = ({ onClick }) => {
       const textGeometry = new TextGeometry("Wendy's Portfolio", {
         font: font,
         size: 0.4,
-        height: 0.1,
+        height: 0.1
       });
 
       // Create canvas for linear gradient texture
@@ -75,7 +75,7 @@ const ThreeCube = ({ onClick }) => {
       scene.add(textMesh);
     });
 
-    camera.position.z = 5;
+    camera.position.z = 7;
 
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();

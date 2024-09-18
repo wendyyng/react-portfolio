@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import { Input, Button, Box, Text, VStack, HStack, Alert, AlertIcon, Avatar, Flex, Center } from '@chakra-ui/react';
+import { Input, Button, Box, Text, VStack, HStack, Alert, AlertIcon, Avatar, Flex, Center, Spinner } from '@chakra-ui/react';
 import { FaRobot, FaPaperPlane, FaTimes, FaComment } from 'react-icons/fa';
 
 const MAX_CHAR_LENGTH = 100;
@@ -10,6 +10,7 @@ function Chat() {
     const [chatHistory, setChatHistory] = useState([]);
     const [error, setError] = useState('');
     const [isMinimized, setIsMinimized] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
     const chatContainerRef = useRef(null);
 
     useEffect(() => {
@@ -33,6 +34,7 @@ function Chat() {
         setChatHistory(prevChatHistory => [...prevChatHistory, userMessage]);
         setMessage('');
         setError('');
+        setIsLoading(true);
 
         try {
             const result = await axios.post('https://api.wendy-ng.dev/api/chat', { message }, {
@@ -41,11 +43,13 @@ function Chat() {
                 }
             });
             const botResponse = { role: 'bot', content: result.data.response };
-            setChatHistory([...chatHistory, userMessage, botResponse]);
+            setChatHistory(prevChatHistory => [...prevChatHistory, botResponse]);
         } catch (error) {
             console.error('Error:', error);
             const errorMessage = { role: 'bot', content: 'An error occurred. Please try again.' };
-            setChatHistory(prevChatHistory => [...prevChatHistory, userMessage, errorMessage]);
+            setChatHistory(prevChatHistory => [...prevChatHistory, errorMessage]);
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -99,7 +103,6 @@ function Chat() {
             zIndex={10}
             width={{ base: '90%', sm: '80%', md: '70%', lg: '50%' }}
             maxW="630px"
-            // left="0.2rem"
         >
             <Box ml={2} display="flex" justifyContent="flex-end">
                 <HStack >
@@ -112,9 +115,8 @@ function Chat() {
                 mb={1}
                 borderRadius="xl"
                 h="200px"
-                // w='600px'
-                overflowY="scroll" // Enable vertical scrolling
-                ref={chatContainerRef} // Reference to the chat container
+                overflowY="scroll"
+                ref={chatContainerRef}
                 border="1px solid #CBD5E0"
             >
                 <VStack spacing={4} mt={4}>
@@ -131,6 +133,12 @@ function Chat() {
                             <Text>{msg.content}</Text>
                         </HStack>
                     ))}
+                    {isLoading && (
+                        <HStack alignSelf="flex-start" bg="pink.100" borderRadius="md" p={3} maxW="70%">
+                            <Avatar icon={<FaRobot />} size="sm" mr={2} />
+                            <Spinner size="sm" color="pink.500" />
+                        </HStack>
+                    )}
                 </VStack>
             </Box>
             {error && (
@@ -163,6 +171,7 @@ function Chat() {
                         bg: "purple.700",
                     }}
                     onClick={sendMessage}
+                    isLoading={isLoading}
                 >
                     <FaPaperPlane size={20} />
                 </Button>

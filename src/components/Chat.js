@@ -16,7 +16,7 @@ function Chat() {
     useEffect(() => {
         const welcomeMessage = {
             role: 'bot',
-            content: "Welcome! This chatbot is here to answer questions about Wendy. Developed with Python, Flask, GPT-4o-mini, and AWS EC2."
+            content: "Welcome! 🤖 This chatbot was created by Wendy using React, Flask, and GPT-4o-mini to answer questions about her. Ask me anything!"
         };
         setChatHistory([welcomeMessage]);
     }, []);

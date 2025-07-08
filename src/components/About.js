@@ -43,19 +43,21 @@ function About() {
                 About Me
               </Text>
               <Text fontSize="5x1">
-                Hi, I’m Wendy Ng — a full stack software developer passionate about building clean, user-friendly web applications.
-                I love those “aha” moments in programming and enjoy turning complex problems into elegant, maintainable solutions that align with real user needs.
-                I’m currently a Full Stack Developer at CXS Analytics, where I contribute to
-                <Link href="https://www.mynext.my/" isExternal color="teal.500" fontWeight="bold">
-                  MyNext
-                </Link>{' '}, a national career development platform serving over 200,000 users.
-                Previously, I worked at {' '}
-                  <Link href="https://www.placespeak.com/" isExternal color="teal.500" fontWeight="bold">
+                Hi, I’m Wendy Ng — a full stack software developer who enjoys turning complex problems into clean, user-friendly web applications.
+                  <br /><br />
+                  I’m currently at CXS Analytics, building and maintaining the{' '}
+                  <Link href="https://www.mynext.my/" isExternal color="pink.500" fontWeight="bold">
+                    MyNext
+                  </Link>{' '}
+                  platform, which supports over 200,000 users.
+                  <br /><br />
+                  Previously, I worked at{' '}
+                  <Link href="https://www.placespeak.com/" isExternal color="pink.500" fontWeight="bold">
                     PlaceSpeak
                   </Link>
-                  , a civic tech SaaS platform for geo-targeted public engagement. 
-                I led key frontend projects including a full homepage redesign, UX improvements, and interactive features for clients such as Elections Yukon, Environment and Climate Change Canada, and the Public Health Association of BC.
-                I’m open to opportunities where I can grow as a developer, collaborate with great teams, and contribute to meaningful, impactful products.
+                  , where I led frontend projects like homepage redesigns and client-driven features for government clients.
+                  <br /><br />
+                  I’m open to new opportunities where I can grow and make an impact through great code and collaboration.
               </Text>
               <br />
 
@@ -70,7 +72,7 @@ function About() {
                   Bachelor of Arts, Economics - University of Calgary, Canada
                 </Text>
                 <Text fontSize="5x1">
-                  Post-Graduate Diploma, Business - University of British Columbia
+                  Post-Graduate Diploma, Business - University of British Columbia, Canada
                 </Text>
               </VStack>
             </Container>

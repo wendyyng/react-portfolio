@@ -45,13 +45,12 @@ function About() {
               <Text fontSize="5x1">
                 Hi, I’m Wendy Ng — a full stack software developer who enjoys turning complex problems into clean, user-friendly web applications.
                   <br /><br />
-                  I’m currently at CXS Analytics, building and maintaining the{' '}
+                   I’m currently at CXS Analytics, building and maintaining the{' '}
                   <Link href="https://www.mynext.my/" isExternal color="pink.500" fontWeight="bold">
                     MyNext
                   </Link>{' '}
                   platform, which supports over 200,000 users.
-                  <br /><br />
-                  Previously, I worked at{' '}
+                   Previously, I worked at{' '}
                   <Link href="https://www.placespeak.com/" isExternal color="pink.500" fontWeight="bold">
                     PlaceSpeak
                   </Link>

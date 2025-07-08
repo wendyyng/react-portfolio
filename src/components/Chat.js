@@ -22,32 +22,40 @@ function Chat() {
     }, []);
 
     const sendMessage = async () => {
-        if (!message) return; // Don't send empty messages
-        console.log(message);
+        if (!message) return;
         if (message.length > MAX_CHAR_LENGTH) {
             setError(`Message cannot exceed ${MAX_CHAR_LENGTH} characters.`);
             return;
         }
 
         const userMessage = { role: 'user', content: message };
+        const updatedChat = [...chatHistory, userMessage];
 
-        setChatHistory(prevChatHistory => [...prevChatHistory, userMessage]);
+        setChatHistory(updatedChat);
         setMessage('');
         setError('');
         setIsLoading(true);
 
         try {
-            const result = await axios.post('https://wendy-bot.onrender.com/api/chat', { message }, {
+            const messagesForAPI = updatedChat.map(msg => ({
+                role: msg.role === 'bot' ? 'assistant' : msg.role,
+                content: msg.content
+            }));
+
+            const result = await axios.post('https://wendy-bot.onrender.com/api/chat', {
+                messages: messagesForAPI
+            }, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
             });
+
             const botResponse = { role: 'bot', content: result.data.response };
-            setChatHistory(prevChatHistory => [...prevChatHistory, botResponse]);
+            setChatHistory(prev => [...prev, botResponse]);
         } catch (error) {
             console.error('Error:', error);
             const errorMessage = { role: 'bot', content: 'An error occurred. Please try again.' };
-            setChatHistory(prevChatHistory => [...prevChatHistory, errorMessage]);
+            setChatHistory(prev => [...prev, errorMessage]);
         } finally {
             setIsLoading(false);
         }

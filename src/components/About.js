@@ -5,6 +5,7 @@ import {
   Flex,
   Stack,
   Text,
+  Link,
   Box,
   VStack,
 } from "@chakra-ui/react";
@@ -42,14 +43,19 @@ function About() {
                 About Me
               </Text>
               <Text fontSize="5x1">
-                Hi, I'm Wendy Ng, a dedicated software developer actively seeking new opportunities. 
-                I love the 'aha' moments in programming and am deeply passionate about 
-                crafting efficient, elegant, and user-friendly web applications. 
-                With experience as a Frontend Developer at PlaceSpeak, 
-                I led significant projects such as homepage redesigns, client-requested feature implementations, 
-                and UI/UX improvements. 
-                Currently, I am eager to secure a full-time position in software development 
-                where I can continue to expand my skills and contribute meaningfully.
+                Hi, I’m Wendy Ng — a full stack software developer passionate about building clean, user-friendly web applications.
+                I love those “aha” moments in programming and enjoy turning complex problems into elegant, maintainable solutions that align with real user needs.
+                I’m currently a Full Stack Developer at CXS Analytics, where I contribute to
+                <Link href="https://www.mynext.my/" isExternal color="teal.500" fontWeight="bold">
+                  MyNext
+                </Link>{' '}, a national career development platform serving over 200,000 users.
+                Previously, I worked at {' '}
+                  <Link href="https://www.placespeak.com/" isExternal color="teal.500" fontWeight="bold">
+                    PlaceSpeak
+                  </Link>
+                  , a civic tech SaaS platform for geo-targeted public engagement. 
+                I led key frontend projects including a full homepage redesign, UX improvements, and interactive features for clients such as Elections Yukon, Environment and Climate Change Canada, and the Public Health Association of BC.
+                I’m open to opportunities where I can grow as a developer, collaborate with great teams, and contribute to meaningful, impactful products.
               </Text>
               <br />
 
@@ -63,7 +69,9 @@ function About() {
                 <Text fontSize="5x1">
                   Bachelor of Arts, Economics - University of Calgary, Canada
                 </Text>
-                {/* <Text fontSize="5x1">Post-Graduate Diploma, Accounting - University of British Columbia</Text> */}
+                <Text fontSize="5x1">
+                  Post-Graduate Diploma, Business - University of British Columbia
+                </Text>
               </VStack>
             </Container>
           </Box>

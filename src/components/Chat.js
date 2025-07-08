@@ -37,7 +37,7 @@ function Chat() {
         setIsLoading(true);
 
         try {
-            const result = await axios.post('https://api.wendy-ng.dev/api/chat', { message }, {
+            const result = await axios.post('https://wendy-bot.onrender.com', { message }, {
                 headers: {
                     'Content-Type': 'application/json'
                 }

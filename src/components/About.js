@@ -5,7 +5,6 @@ import {
   Flex,
   Stack,
   Text,
-  Link,
   Box,
   VStack,
 } from "@chakra-ui/react";
@@ -43,18 +42,12 @@ function About() {
                 About Me
               </Text>
               <Text fontSize="5x1">
-                Hi, I’m Wendy Ng — a full stack software developer who enjoys turning complex problems into clean, user-friendly web applications.
+                Hi, I’m Wendy Ng — a full-stack software developer who enjoys turning complex problems into clean, user-friendly web applications.
                   <br /><br />
-                   I’m currently at CXS Analytics, building and maintaining the{' '}
-                  <Link href="https://www.mynext.my/" isExternal color="pink.500" fontWeight="bold">
-                    MyNext
-                  </Link>{' '}
-                  platform, which supports over 200,000 users.
-                   Previously, I worked at{' '}
-                  <Link href="https://www.placespeak.com/" isExternal color="pink.500" fontWeight="bold">
-                    PlaceSpeak
-                  </Link>
-                  , where I led frontend projects like homepage redesigns and client-driven features for government clients.
+                  I’m currently at <Text fontWeight="bold">CXS Analytics</Text>, where I build and maintain the MyNext platform — 
+                  a system that connects students, universities, and companies to empower talent development and career readiness, 
+                  supporting over 200,000 users.
+                  Previously, I worked at <Text fontWeight="bold">PlaceSpeak</Text>, where I led frontend projects like homepage redesign and custom features for government clients.
                   <br /><br />
                   I’m open to new opportunities where I can grow and make an impact through great code and collaboration.
               </Text>

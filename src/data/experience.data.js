@@ -16,7 +16,7 @@ export const experience = [
       "https://www.placespeak.com/static/img/logos/logos_download/placespeak_square_logo.png", 
   },
   {
-    position_title: "Web Developer (Volunteer)",
+    position_title: "Web Developer",
     company: "Society for Canadian Women in Science and Technology",
     date: "Oct 2022 - Feb 2023",
     description: [
@@ -30,7 +30,7 @@ export const experience = [
       "https://user-images.githubusercontent.com/71687298/208505498-a6fad389-d70b-41cb-b989-932835e5804b.jpg",
   },
   {
-    position_title: "Open Source Developer",
+    position_title: "Software Developer",
     company: "OpenTree Education",
     date: "Oct - Dec 2022",
     description: [

@@ -114,10 +114,10 @@ const ThreeCube = ({ onClick }) => {
 
       if (intersects.length > 0) {
         setIsCubeHovered(true);
-        document.body.style.cursor = 'pointer';
+        document.querySelector('.cube-container').style.cursor = 'pointer';
       } else {
         setIsCubeHovered(false);
-        document.body.style.cursor = 'auto';
+        document.querySelector('.cube-container').style.cursor = 'auto';
       }
     };
 

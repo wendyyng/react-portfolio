@@ -16,7 +16,7 @@ function Chat() {
     useEffect(() => {
         const welcomeMessage = {
             role: 'bot',
-            content: "Welcome! 🤖 This chatbot was created by Wendy using React, Flask, and GPT-4o-mini to answer questions about her. Ask me anything! (It may take a few seconds to respond if the server was idle — hosted on Render free tier.)"
+            content: "Welcome! 🤖 This chatbot was created by Wendy using React, Flask, and GPT-4o-mini to answer questions about her. Ask me anything! (It may take a few seconds to respond if the server was idle - hosted on Render free tier.)"
         };
         setChatHistory([welcomeMessage]);
     }, []);

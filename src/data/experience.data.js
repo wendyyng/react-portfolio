@@ -1,7 +1,7 @@
 import placespeakLogo from '../assets/placespeak_square_logo.png';
-import scwistLogo from '../assets/scwist_logo.png';
+import scwistLogo from '../assets/scwist_logo.jpg';
 import opentreeLogo from '../assets/opentree_logo.png';
-import cxsLogo from '../assets/cxs_logo.png';
+import cxsLogo from '../assets/cxs_logo.jpg';
 
 export const experience = [
   {

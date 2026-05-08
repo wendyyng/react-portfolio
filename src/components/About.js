@@ -33,7 +33,8 @@ function About() {
             <Image
               borderRadius="full"
               boxSize="300px"
-              src="https://user-images.githubusercontent.com/71687298/204715951-2c26f338-42c2-47f8-889d-b7087ebf90e0.jpg"
+              src="/public/profile-pic.png"
+              alt="Wendy Ng"
             />
           </Flex>
           <Box>
@@ -44,10 +45,10 @@ function About() {
               <Text fontSize="5x1">
                 Hi, I’m Wendy Ng — a full-stack software developer who enjoys turning complex problems into clean, user-friendly web applications.
                   <br /><br />
-                  I’m currently at CXS Analytics, where I build and maintain the MyNext platform — 
+                  I have built and maintained the MyNext platform — 
                   a system that connects students, universities, and companies to empower talent development and career readiness, 
                   supporting over 200,000 users.
-                  Previously, I worked at PlaceSpeak, where I led frontend projects like homepage redesign and custom features for government clients.
+                  I have also worked at PlaceSpeak, where I led frontend projects like homepage redesign and custom features for government clients across Canada.
                   <br /><br />
                   I’m open to new opportunities where I can grow and make an impact through great code and collaboration.
               </Text>

@@ -7,7 +7,7 @@ export const experience = [
   {
     position_title: "Fullstack Developer",
     company: "CXS Analytics",
-    date: "Jan 2025 - Present",
+    date: "Jan 2025 - March 2026",
     description: [
       "Building and maintaining APIs (Django, Laravel) and UI (React) for a career development platform with 200K+ users",
       "Refactored monolithic Laravel logic into modular APIs for React frontend",
@@ -16,7 +16,7 @@ export const experience = [
       "Improved API speed via Redis caching and query optimization",
       "Collaborate with PMs/clients to turn specs into shipped features",
     ],
-    skills: "JavaScript, React, Python, Django, MongoDB, MySQL",
+    skills: "JavaScript, React, Python, Django, PHP, Laravel, MongoDB, MySQL",
     website: "https://cxsanalytics.com/",
     company_logo:
       cxsLogo,

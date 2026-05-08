@@ -33,7 +33,7 @@ function About() {
             <Image
               borderRadius="full"
               boxSize="300px"
-              src="/public/profile-pic.png"
+              src="/profile-picture.png"
               alt="Wendy Ng"
             />
           </Flex>

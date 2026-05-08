@@ -1,4 +1,4 @@
-# Portfolio Website featuring Personal Chatbot Powered by GPT-4o-mini
+# Portfolio Website featuring Personal Chatbot Powered by GPT-4.1-mini
 
 A fully responsive portfolio website featuring a personal chatbot that answers questions about my background, skills, and projects. This website includes a Three.js animation of a rotating cube that provides an engaging visual element. This website can be installed as a Progressive Web App (PWA) on desktop and mobile devices for offline viewing.
 See the backend's repo here: https://github.com/wendyyng/wendy-bot
@@ -24,7 +24,7 @@ See the backend's repo here: https://github.com/wendyyng/wendy-bot
 - Python
 - Flask
 - ChatGPT Prompt Engineering
-- OpenAI's GPT-4o-mini API
+- OpenAI's GPT-4.1-mini API
 - Render for deployment (Previously hosted on AWS EC2)
 - GitHub Actions (Used for CI/CD during AWS EC2 deployment)
 

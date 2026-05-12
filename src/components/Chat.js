@@ -4,6 +4,8 @@ import { Input, Button, Box, Text, VStack, HStack, Alert, AlertIcon, Avatar, Fle
 import { FaRobot, FaPaperPlane, FaTimes, FaComment } from 'react-icons/fa';
 
 const MAX_CHAR_LENGTH = 100;
+const API_URL = 'https://wendy-bot.onrender.com/api/chat';
+const API_TIMEOUT_MS = 120000; // 2 minutes for Render cold starts
 
 function Chat() {
     const [message, setMessage] = useState('');
@@ -16,7 +18,7 @@ function Chat() {
     useEffect(() => {
         const welcomeMessage = {
             role: 'bot',
-            content: "Welcome! This chatbot was created by Wendy using React, Flask, and GPT-4o-mini to answer questions about her. Ask me anything! (It may take a few seconds to respond if the server was idle - hosted on Render free tier.)"
+            content: "Welcome! This chatbot was created by Wendy using React, Flask, and GPT-4.1-mini to answer questions about her. Ask me anything! (It may take some time to respond if the server was idle - hosted on Render free tier.)"
         };
         setChatHistory([welcomeMessage]);
     }, []);
@@ -42,19 +44,41 @@ function Chat() {
                 content: msg.content
             }));
 
-            const result = await axios.post('https://wendy-bot.onrender.com/api/chat', {
+            const result = await axios.post(API_URL, {
                 messages: messagesForAPI
             }, {
                 headers: {
                     'Content-Type': 'application/json'
-                }
+                },
+                timeout: API_TIMEOUT_MS
             });
 
             const botResponse = { role: 'bot', content: result.data.response };
             setChatHistory(prev => [...prev, botResponse]);
-        } catch (error) {
-            console.error('Error:', error);
-            const errorMessage = { role: 'bot', content: 'An error occurred. Please try again.' };
+        } catch (err) {
+            console.error('Chat error', err);
+
+            // Default fallback message
+            let userFacing = 'An error occurred. Please try again.';
+
+            if (err.response && err.response.data) {
+                const { status, data } = err.response;
+                if (status === 502 && data.error === 'openai_error') {
+                    userFacing = 'AI service is temporarily unavailable. Please try again later.';
+                } else if (status === 500 && data.error === 'system_error') {
+                    userFacing = 'Server error. Please try again later.';
+                } else if (data.message) {
+                    // optionally surface a message from the server in dev only
+                    userFacing = data.message;
+                }
+            } else if (err.code === 'ECONNABORTED') {
+                userFacing = 'Request timed out. Please try again.';
+            } else if (!err.response) {
+                userFacing = 'Network error. Check your connection.';
+            }
+
+            setError(userFacing);
+            const errorMessage = { role: 'bot', content: userFacing };
             setChatHistory(prev => [...prev, errorMessage]);
         } finally {
             setIsLoading(false);
@@ -100,7 +124,7 @@ function Chat() {
 
     return (
         <Box
-            ml={10}
+            ml={2}
             p={4}
             position="fixed"
             bottom={4}
